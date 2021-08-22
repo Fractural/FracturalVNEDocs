@@ -30,8 +30,12 @@ docroot=`mktemp -d`
 rsync -av "build/html/" "${docroot}/"
  
 pushd "${docroot}"
+
 echo "LISTING DIR FILES:"
-ls
+for entry in "."/*
+do
+  echo "$entry"
+done
 
 git init
 git remote add deploy "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
@@ -56,9 +60,6 @@ git commit -am "${msg}"
  
 # overwrite the contents of the gh-pages branch on our github.com repo
 git push deploy gh-pages --force
- 
-echo "LISTING DIR FILES AFTER FORCE:"
-ls
 
 popd # return to main repo sandbox root
  
