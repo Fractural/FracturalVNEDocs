@@ -17,21 +17,6 @@ jobs:
     container: debian:buster-slim
 
     steps:
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v2
-        with:
-          python-version: ${{ matrix.python-version }}
-      
-      - name: Update PATH
-        if: ${{ matrix.os != 'Windows' }}
-        shell: bash
-        run: echo "$HOME/.local/bin" >> $GITHUB_PATH
-
-      - name: Update Path for Windows
-        if: ${{ matrix.os == 'Windows' }}
-        shell: bash
-        run: echo "$APPDATA\Python\Scripts" >> $GITHUB_PATH
-
       - name: Get prerequisites and clone repository
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
