@@ -39,6 +39,9 @@ extensions = [
     "sphinx.ext.intersphinx",
     "sphinx.ext.viewcode",
     "sphinx_panels",
+    "sphinx_tabs.tabs",
+    "notfound.extension",
+    "sphinxext.opengraph",
 ]
 
 myst_enable_extensions = [
@@ -129,3 +132,27 @@ html_js_files = ["js/custom.js"]
 # Locals
 locale_dirs = ['locale/']   # path is example but recommended.
 gettext_compact = False     # optional.
+
+
+# Custom 4O4 page HTML template.
+# https://github.com/readthedocs/sphinx-notfound-page
+notfound_context = {
+    "title": "Page not found",
+    "body": """
+        <h1>Page not found</h1>
+        <p>
+            Sorry, we couldn't find that page. It may have been renamed or removed
+            in the version of the documentation you're currently browsing.
+        </p>
+        <p>
+            If you're currently browsing the
+            <em>latest</em> version of the documentation, try browsing the
+            <a href="/en/stable/"><em>stable</em> version of the documentation</a>.
+        </p>
+        <p>
+            Alternatively, use the
+            <a href="#" onclick="$('#rtd-search-form [name=\\'q\\']').focus()">Search docs</a>
+            box on the left or <a href="/">go to the homepage</a>.
+        </p>
+    """,
+}
