@@ -7,6 +7,7 @@ find .
 apt-get update
 apt-get -y install python3
 apt-get -y install python3-pip
+apt-get -y install rsync
 
 pip install -r requirements.txt
 pip3 install -r requirements.txt
