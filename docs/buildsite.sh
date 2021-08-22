@@ -1,6 +1,9 @@
 #!/bin/bash
 set -x
 
+echo "FIND ALL FILES 1:"
+find .
+
 apt-get update
 apt-get -y install python3
 apt-get -y install python3-pip
@@ -31,7 +34,7 @@ rsync -av "build/html/" "${docroot}/"
  
 pushd "${docroot}"
 
-echo "FIND ALL FILES:"
+echo "FIND ALL FILES 2:"
 find .
 
 git init
