@@ -1,0 +1,559 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Godot release policy &mdash; Fractural Visual Novel Engine latest documentation</title>
+
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    <meta name="theme-color" content="#3d8fcc">
+  
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Complying with licenses" href="complying_with_licenses.html" />
+    <link rel="prev" title="Documentation changelog" href="docs_changelog.html" />
+<meta name="doc_version" content="latest">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo_3_transparent.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">General</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">About</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#before-you-start">Before you start</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#about-godot-engine">About Godot Engine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#about-the-documentation">About the documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#organization-of-the-documentation">Organization of the documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html">Frequently asked questions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#what-can-i-do-with-godot-how-much-does-it-cost-what-are-the-license-terms">What can I do with Godot? How much does it cost? What are the license terms?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#which-platforms-are-supported-by-godot">Which platforms are supported by Godot?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#which-programming-languages-are-supported-in-godot">Which programming languages are supported in Godot?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#what-is-gdscript-and-why-should-i-use-it">What is GDScript and why should I use it?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#what-were-the-motivations-behind-creating-gdscript">What were the motivations behind creating GDScript?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#what-3d-model-formats-does-godot-support">What 3D model formats does Godot support?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#will-insert-closed-sdk-such-as-fmod-gameworks-etc-be-supported-in-godot">Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#why-does-godot-use-vulkan-or-opengl-instead-of-direct3d">Why does Godot use Vulkan or OpenGL instead of Direct3D?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#why-does-godot-aim-to-keep-its-core-feature-set-small">Why does Godot aim to keep its core feature set small?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#how-should-assets-be-created-to-handle-multiple-resolutions-and-aspect-ratios">How should assets be created to handle multiple resolutions and aspect ratios?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#how-can-i-extend-godot">How can I extend Godot?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#when-is-the-next-release-of-godot-out">When is the next release of Godot out?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#i-would-like-to-contribute-how-can-i-get-started">I would like to contribute! How can I get started?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#i-have-a-great-idea-for-godot-how-can-i-share-it">I have a great idea for Godot. How can I share it?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#is-it-possible-to-use-godot-to-create-non-game-applications">Is it possible to use Godot to create non-game applications?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#is-it-possible-to-use-godot-as-a-library">Is it possible to use Godot as a library?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#what-user-interface-toolkit-does-godot-use">What user interface toolkit does Godot use?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#why-does-godot-not-use-stl-standard-template-library">Why does Godot not use STL (Standard Template Library)?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#why-does-godot-not-use-exceptions">Why does Godot not use exceptions?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#why-does-godot-not-enforce-rtti">Why does Godot not enforce RTTI?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#does-godot-use-an-ecs-entity-component-system">Does Godot use an ECS (Entity Component System)?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#why-does-godot-not-force-users-to-implement-dod-data-oriented-design">Why does Godot not force users to implement DoD (Data-oriented Design)?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#how-can-i-support-godot-development-or-contribute">How can I support Godot development or contribute?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#who-is-working-on-godot-how-can-i-contact-you">Who is working on Godot? How can I contact you?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#everything-i-do-in-the-editor-or-project-manager-appears-delayed-by-one-frame">Everything I do in the editor or project manager appears delayed by one frame.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-editor-runs-slowly-and-uses-all-my-cpu-and-gpu-resources-making-my-computer-noisy">The editor runs slowly and uses all my CPU and GPU resources, making my computer noisy.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-editor-stutters-and-flickers-on-my-variable-refresh-rate-monitor-g-sync-freesync">The editor stutters and flickers on my variable refresh rate monitor (G-Sync/FreeSync).</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-grid-disappears-and-meshes-turn-black-when-i-rotate-the-3d-camera-in-the-editor">The grid disappears and meshes turn black when I rotate the 3D camera in the editor.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-editor-or-project-takes-a-very-long-time-to-start">The editor or project takes a very long time to start.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#editor-tooltips-in-the-inspector-and-node-docks-blink-when-they-re-displayed">Editor tooltips in the Inspector and Node docks blink when they're displayed.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-godot-editor-appears-frozen-after-clicking-the-system-console">The Godot editor appears frozen after clicking the system console.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#some-text-such-as-no-dc-appears-in-the-top-left-corner-of-the-project-manager-and-editor-window">Some text such as &quot;NO DC&quot; appears in the top-left corner of the project manager and editor window.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-project-window-appears-blurry-unlike-the-editor">The project window appears blurry, unlike the editor.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-project-window-doesn-t-appear-centered-when-i-run-the-project">The project window doesn't appear centered when I run the project.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-project-works-when-run-from-the-editor-but-fails-to-load-some-files-when-running-from-an-exported-copy">The project works when run from the editor, but fails to load some files when running from an exported copy.</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="list_of_features.html">List of features</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="list_of_features.html#features">Features</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#platforms">Platforms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#editor">Editor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#d-graphics">2D graphics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#d-tools">2D tools</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#d-physics">2D physics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#id1">3D graphics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#id2">3D tools</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#id3">3D physics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#shaders">Shaders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#scripting">Scripting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#audio">Audio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#import">Import</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#input">Input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#navigation">Navigation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#networking">Networking</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#internationalization">Internationalization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#windowing-and-os-integration">Windowing and OS integration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#mobile">Mobile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#xr-support-ar-and-vr">XR support (AR and VR)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#gui-system">GUI system</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#animation">Animation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#formats">Formats</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#miscellaneous">Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="docs_changelog.html">Documentation changelog</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="docs_changelog.html#new-pages-since-version-3-3">New pages since version 3.3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#c">C++</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#gdscript">GDScript</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="docs_changelog.html#new-pages-since-version-3-2">New pages since version 3.2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#d">3D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#about">About</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#best-practices">Best practices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#community">Community</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#development">Development</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#editor">Editor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#export">Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#input">Input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#math">Math</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#platform-specific">Platform-specific</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#physics">Physics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#shaders">Shaders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#scripting">Scripting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#vr">VR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#user-interface-ui">User Interface (UI)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="docs_changelog.html#new-pages-since-version-3-1">New pages since version 3.1</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#project-workflow">Project workflow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id1">2D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#audio">Audio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id2">Math</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#inputs">Inputs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#internationalization">Internationalization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#shading">Shading</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#networking">Networking</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id3">VR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#plugins">Plugins</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#multi-threading">Multi-threading</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#creating-content">Creating content</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#optimization">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#legal">Legal</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="docs_changelog.html#new-pages-since-version-3-0">New pages since version 3.0</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#step-by-step">Step by step</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id4">Scripting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id5">Project workflow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id6">2D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id7">3D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id8">Physics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#animation">Animation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#gui">GUI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#viewports">Viewports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id9">Shading</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id10">Plugins</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id11">Platform-specific</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id12">Multi-threading</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id13">Creating content</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#miscellaneous">Miscellaneous</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#compiling">Compiling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#engine-development">Engine development</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Godot release policy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#godot-versioning">Godot versioning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#release-support-timeline">Release support timeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#when-is-the-next-release-out">When is the next release out?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="complying_with_licenses.html">Complying with licenses</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="complying_with_licenses.html#what-are-licenses">What are licenses?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="complying_with_licenses.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="complying_with_licenses.html#inclusion">Inclusion</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#credits-screen">Credits screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#licenses-screen">Licenses screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#output-log">Output log</a></li>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#accompanying-file">Accompanying file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#printed-manual">Printed manual</a></li>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#link-to-the-license">Link to the license</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="complying_with_licenses.html#third-party-licenses">Third-party licenses</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#freetype">FreeType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#enet">ENet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#mbedtls">MBedTLS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../step-by-step/index.html">Step by step</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../step-by-step/introduction.html">Introduction to Fractural VNE</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Fractural Visual Novel Engine</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">About</a> &raquo;</li>
+        
+      <li>Godot release policy</li>
+    
+    
+
+
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/about/release_policy.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="godot-release-policy">
+<span id="doc-release-policy"></span><h1>Godot release policy<a class="headerlink" href="#godot-release-policy" title="Permalink to this headline">¶</a></h1>
+<p>Godot's release policy is in constant evolution. What is described below is
+intended to give a general idea of what to expect, but what will actually
+happen depends on the choices of core contributors, and the needs of the
+community at a given time.</p>
+<div class="section" id="godot-versioning">
+<h2>Godot versioning<a class="headerlink" href="#godot-versioning" title="Permalink to this headline">¶</a></h2>
+<p>Godot loosely follows <a class="reference external" href="https://semver.org/">Semantic Versioning</a> with a
+<code class="docutils literal notranslate"><span class="pre">major.minor.patch</span></code> versioning system, albeit with an interpretation of each
+term adapted to the complexity of a game engine:</p>
+<ul>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">major</span></code> version is incremented when major compatibility breakages happen
+which imply significant porting work to move projects from one major version
+to another.</p>
+<p>For example, porting Godot projects from Godot 2.1 to Godot 3.0 required
+running the project through a conversion tool, and then performing a number
+of further adjustments manually for what the tool could not do automatically.</p>
+</li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">minor</span></code> version is incremented for feature releases which do not break
+compatibility in a major way. Minor compatibility breakage in very specific
+areas <em>may</em> happen in minor versions, but the vast majority of projects
+should not be affected or require significant porting work.</p>
+<p>The reason for this is that as a game engine, Godot covers many areas such
+as rendering, physics, scripting, etc., and fixing bugs or implementing new
+features in a given area may sometimes require changing the behavior of a
+feature, or modifying the interface of a given class, even if the rest of
+the engine API remains backwards compatible.</p>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Upgrading to a new minor version is therefore recommended for all users,
+but some testing is necessary to ensure that your project still behaves as
+expected in a new minor version.</p>
+</div>
+<ul>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">patch</span></code> version is incremented for maintenance releases which focus on
+fixing bugs and security issues, implementing new requirements for platform
+support, and backporting safe usability enhancements. Patch releases are
+backwards compatible.</p>
+<p>Patch versions may include minor new features which do not impact the
+existing API, and thus have no risk of impacting existing projects.</p>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Updating to new patch versions is therefore considered safe and strongly
+recommended to all users of a given stable branch.</p>
+</div>
+<p>We call <code class="docutils literal notranslate"><span class="pre">major.minor</span></code> combinations <em>stable branches</em>. Each stable branch
+starts with a <code class="docutils literal notranslate"><span class="pre">major.minor</span></code> release (without the <code class="docutils literal notranslate"><span class="pre">0</span></code> for <code class="docutils literal notranslate"><span class="pre">patch</span></code>) and is
+further developed for maintenance releases in a Git branch of the same name
+(for example patch updates for the 3.3 stable branch are developed in the
+<code class="docutils literal notranslate"><span class="pre">3.3</span></code> Git branch).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As mentioned in the introduction, Godot's release policy is evolving, and
+earlier Godot releases may not have followed the above rules to the letter.
+In particular, the 3.2 stable branch received a number of new features in
+3.2.2 which would have warranted a <code class="docutils literal notranslate"><span class="pre">minor</span></code> version increment.</p>
+</div>
+</div>
+<div class="section" id="release-support-timeline">
+<h2>Release support timeline<a class="headerlink" href="#release-support-timeline" title="Permalink to this headline">¶</a></h2>
+<p>Stable branches are supported <em>at minimum</em> until the next stable branch is
+released and has received its first patch update. In practice, we support
+stable branches on a <em>best effort</em> basis for as long as they have active users
+who need maintenance updates.</p>
+<p>Whenever a new major version is released, we make the previous stable branch a
+long-term supported release, and do our best to provide fixes for issues
+encountered by users of that branch who cannot port complex projects to the new
+major version. This is the case for the 2.1 branch, and will be the case for
+the latest 3.x stable branch by the time Godot 4.0 is released.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 18%" />
+<col style="width: 70%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Version</strong></p></td>
+<td><p><strong>Release date</strong></p></td>
+<td><p><strong>Support level</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Godot 4.0</p></td>
+<td><p>~2021 (see below)</p></td>
+<td><p><img alt="unstable" src="../_images/unstable.png" /> <em>Current focus of development (unstable).</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>Godot 3.4</p></td>
+<td><p>Q2 or Q3 2021</p></td>
+<td><p><img alt="supported" src="../_images/supported.png" /> <em>Beta.</em> Receives new features as well as bug fixes while
+under development.</p></td>
+</tr>
+<tr class="row-even"><td><p>Godot 3.3</p></td>
+<td><p>April 2021</p></td>
+<td><p><img alt="supported" src="../_images/supported.png" /> Receives fixes for bugs, security and platform support
+issues, as well as backwards-compatible usability enhancements.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Godot 3.2</p></td>
+<td><p>January 2020</p></td>
+<td><p><img alt="eol" src="../_images/eol.png" /> No longer supported as fully superseded by the compatible 3.3
+release (last update: 3.2.3).</p></td>
+</tr>
+<tr class="row-even"><td><p>Godot 3.1</p></td>
+<td><p>March 2019</p></td>
+<td><p><img alt="partial" src="../_images/partial.png" /> Only critical, security and platform support fixes
+(last update: 3.1.2).</p></td>
+</tr>
+<tr class="row-odd"><td><p>Godot 3.0</p></td>
+<td><p>January 2018</p></td>
+<td><p><img alt="eol" src="../_images/eol.png" /> No longer supported (last update: 3.0.6).</p></td>
+</tr>
+<tr class="row-even"><td><p>Godot 2.1</p></td>
+<td><p>July 2016</p></td>
+<td><p><img alt="partial" src="../_images/partial.png" /> Only critical, security and platform support fixes
+(last update: 2.1.6).</p></td>
+</tr>
+<tr class="row-odd"><td><p>Godot 2.0</p></td>
+<td><p>February 2016</p></td>
+<td><p><img alt="eol" src="../_images/eol.png" /> No longer supported (last update: 2.0.4.1).</p></td>
+</tr>
+<tr class="row-even"><td><p>Godot 1.1</p></td>
+<td><p>May 2015</p></td>
+<td><p><img alt="eol" src="../_images/eol.png" /> No longer supported.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Godot 1.0</p></td>
+<td><p>December 2014</p></td>
+<td><p><img alt="eol" src="../_images/eol.png" /> No longer supported.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Legend:</strong>
+<img alt="supported" src="../_images/supported.png" /> Full support –
+<img alt="partial" src="../_images/partial.png" /> Partial support –
+<img alt="eol" src="../_images/eol.png" /> No support (end of life) –
+<img alt="unstable" src="../_images/unstable.png" /> Development version</p>
+<p>Pre-release Godot versions aren't intended to be used in production and are
+provided for testing purposes only.</p>
+</div>
+<div class="section" id="when-is-the-next-release-out">
+<span id="doc-release-policy-when-is-next-release-out"></span><h2>When is the next release out?<a class="headerlink" href="#when-is-the-next-release-out" title="Permalink to this headline">¶</a></h2>
+<p>While Godot contributors aren't working under any deadlines, we have
+historically had one major or minor release per year, with several maintenance
+updates between each.</p>
+<p>Starting with Godot 3.3, we aim to accelerate our development cycles for minor
+releases, so you can expect a new minor release every 3 to 6 months.</p>
+<p>Maintenance (patch) releases will be released as needed with potentially very
+short development cycles, to provide users of the current stable branch with
+the latest bug fixes for their production needs.</p>
+<p>As for the upcoming Godot 4.0, we can only say that we aim for a <strong>2021</strong>
+release, but any closer estimate is likely to be hard to uphold. Alpha builds
+will be published as soon as the main features for Godot 4.0 are finalized.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="complying_with_licenses.html" class="btn btn-neutral float-right" title="Complying with licenses" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="docs_changelog.html" class="btn btn-neutral float-left" title="Documentation changelog" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Fractural, Atlinx and contributors.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

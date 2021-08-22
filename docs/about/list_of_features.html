@@ -1,0 +1,1108 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>List of features &mdash; Fractural Visual Novel Engine latest documentation</title>
+
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    <meta name="theme-color" content="#3d8fcc">
+  
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Documentation changelog" href="docs_changelog.html" />
+    <link rel="prev" title="Troubleshooting" href="troubleshooting.html" />
+<meta name="doc_version" content="latest">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo_3_transparent.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">General</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">About</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#before-you-start">Before you start</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#about-godot-engine">About Godot Engine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#about-the-documentation">About the documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#organization-of-the-documentation">Organization of the documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html">Frequently asked questions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#what-can-i-do-with-godot-how-much-does-it-cost-what-are-the-license-terms">What can I do with Godot? How much does it cost? What are the license terms?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#which-platforms-are-supported-by-godot">Which platforms are supported by Godot?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#which-programming-languages-are-supported-in-godot">Which programming languages are supported in Godot?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#what-is-gdscript-and-why-should-i-use-it">What is GDScript and why should I use it?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#what-were-the-motivations-behind-creating-gdscript">What were the motivations behind creating GDScript?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#what-3d-model-formats-does-godot-support">What 3D model formats does Godot support?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#will-insert-closed-sdk-such-as-fmod-gameworks-etc-be-supported-in-godot">Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#why-does-godot-use-vulkan-or-opengl-instead-of-direct3d">Why does Godot use Vulkan or OpenGL instead of Direct3D?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#why-does-godot-aim-to-keep-its-core-feature-set-small">Why does Godot aim to keep its core feature set small?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#how-should-assets-be-created-to-handle-multiple-resolutions-and-aspect-ratios">How should assets be created to handle multiple resolutions and aspect ratios?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#how-can-i-extend-godot">How can I extend Godot?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#when-is-the-next-release-of-godot-out">When is the next release of Godot out?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#i-would-like-to-contribute-how-can-i-get-started">I would like to contribute! How can I get started?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#i-have-a-great-idea-for-godot-how-can-i-share-it">I have a great idea for Godot. How can I share it?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#is-it-possible-to-use-godot-to-create-non-game-applications">Is it possible to use Godot to create non-game applications?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#is-it-possible-to-use-godot-as-a-library">Is it possible to use Godot as a library?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#what-user-interface-toolkit-does-godot-use">What user interface toolkit does Godot use?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#why-does-godot-not-use-stl-standard-template-library">Why does Godot not use STL (Standard Template Library)?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#why-does-godot-not-use-exceptions">Why does Godot not use exceptions?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#why-does-godot-not-enforce-rtti">Why does Godot not enforce RTTI?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#does-godot-use-an-ecs-entity-component-system">Does Godot use an ECS (Entity Component System)?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#why-does-godot-not-force-users-to-implement-dod-data-oriented-design">Why does Godot not force users to implement DoD (Data-oriented Design)?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#how-can-i-support-godot-development-or-contribute">How can I support Godot development or contribute?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#who-is-working-on-godot-how-can-i-contact-you">Who is working on Godot? How can I contact you?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#everything-i-do-in-the-editor-or-project-manager-appears-delayed-by-one-frame">Everything I do in the editor or project manager appears delayed by one frame.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-editor-runs-slowly-and-uses-all-my-cpu-and-gpu-resources-making-my-computer-noisy">The editor runs slowly and uses all my CPU and GPU resources, making my computer noisy.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-editor-stutters-and-flickers-on-my-variable-refresh-rate-monitor-g-sync-freesync">The editor stutters and flickers on my variable refresh rate monitor (G-Sync/FreeSync).</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-grid-disappears-and-meshes-turn-black-when-i-rotate-the-3d-camera-in-the-editor">The grid disappears and meshes turn black when I rotate the 3D camera in the editor.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-editor-or-project-takes-a-very-long-time-to-start">The editor or project takes a very long time to start.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#editor-tooltips-in-the-inspector-and-node-docks-blink-when-they-re-displayed">Editor tooltips in the Inspector and Node docks blink when they're displayed.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-godot-editor-appears-frozen-after-clicking-the-system-console">The Godot editor appears frozen after clicking the system console.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#some-text-such-as-no-dc-appears-in-the-top-left-corner-of-the-project-manager-and-editor-window">Some text such as &quot;NO DC&quot; appears in the top-left corner of the project manager and editor window.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-project-window-appears-blurry-unlike-the-editor">The project window appears blurry, unlike the editor.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-project-window-doesn-t-appear-centered-when-i-run-the-project">The project window doesn't appear centered when I run the project.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-project-works-when-run-from-the-editor-but-fails-to-load-some-files-when-running-from-an-exported-copy">The project works when run from the editor, but fails to load some files when running from an exported copy.</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">List of features</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#features">Features</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#platforms">Platforms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#editor">Editor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#d-graphics">2D graphics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#d-tools">2D tools</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#d-physics">2D physics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1">3D graphics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">3D tools</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">3D physics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#shaders">Shaders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scripting">Scripting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#audio">Audio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#import">Import</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#input">Input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#navigation">Navigation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#networking">Networking</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#internationalization">Internationalization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#windowing-and-os-integration">Windowing and OS integration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mobile">Mobile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#xr-support-ar-and-vr">XR support (AR and VR)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gui-system">GUI system</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#animation">Animation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#formats">Formats</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="docs_changelog.html">Documentation changelog</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="docs_changelog.html#new-pages-since-version-3-3">New pages since version 3.3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#c">C++</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#gdscript">GDScript</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="docs_changelog.html#new-pages-since-version-3-2">New pages since version 3.2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#d">3D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#about">About</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#best-practices">Best practices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#community">Community</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#development">Development</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#editor">Editor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#export">Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#input">Input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#math">Math</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#platform-specific">Platform-specific</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#physics">Physics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#shaders">Shaders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#scripting">Scripting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#vr">VR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#user-interface-ui">User Interface (UI)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="docs_changelog.html#new-pages-since-version-3-1">New pages since version 3.1</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#project-workflow">Project workflow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id1">2D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#audio">Audio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id2">Math</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#inputs">Inputs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#internationalization">Internationalization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#shading">Shading</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#networking">Networking</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id3">VR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#plugins">Plugins</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#multi-threading">Multi-threading</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#creating-content">Creating content</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#optimization">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#legal">Legal</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="docs_changelog.html#new-pages-since-version-3-0">New pages since version 3.0</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#step-by-step">Step by step</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id4">Scripting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id5">Project workflow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id6">2D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id7">3D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id8">Physics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#animation">Animation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#gui">GUI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#viewports">Viewports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id9">Shading</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id10">Plugins</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id11">Platform-specific</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id12">Multi-threading</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#id13">Creating content</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#miscellaneous">Miscellaneous</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#compiling">Compiling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs_changelog.html#engine-development">Engine development</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="release_policy.html">Godot release policy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="release_policy.html#godot-versioning">Godot versioning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="release_policy.html#release-support-timeline">Release support timeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="release_policy.html#when-is-the-next-release-out">When is the next release out?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="complying_with_licenses.html">Complying with licenses</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="complying_with_licenses.html#what-are-licenses">What are licenses?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="complying_with_licenses.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="complying_with_licenses.html#inclusion">Inclusion</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#credits-screen">Credits screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#licenses-screen">Licenses screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#output-log">Output log</a></li>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#accompanying-file">Accompanying file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#printed-manual">Printed manual</a></li>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#link-to-the-license">Link to the license</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="complying_with_licenses.html#third-party-licenses">Third-party licenses</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#freetype">FreeType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#enet">ENet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#mbedtls">MBedTLS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../step-by-step/index.html">Step by step</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../step-by-step/introduction.html">Introduction to Fractural VNE</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Fractural Visual Novel Engine</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">About</a> &raquo;</li>
+        
+      <li>List of features</li>
+    
+    
+
+
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/about/list_of_features.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="list-of-features">
+<span id="doc-list-of-features"></span><h1>List of features<a class="headerlink" href="#list-of-features" title="Permalink to this headline">¶</a></h1>
+<p>This page aims to list all features currently supported by Godot.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This page lists features supported by the current development version of
+Godot (4.0.dev). Some of these features may not be available in the
+<a class="reference external" href="https://docs.godotengine.org/en/stable/about/list_of_features.html">current stable release series (3.x)</a>.</p>
+</div>
+<div class="section" id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="platforms">
+<h3>Platforms<a class="headerlink" href="#platforms" title="Permalink to this headline">¶</a></h3>
+<p><strong>Can run both the editor and exported projects:</strong></p>
+<ul>
+<li><p>Windows 7 and later (64-bit and 32-bit).</p></li>
+<li><p>macOS 10.12 and later (64-bit, x86 and ARM).</p></li>
+<li><p>Linux (64-bit, x86 and ARM).</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Binaries are statically linked and can run on any distribution if compiled
+on an old enough base distribution.</p></li>
+<li><p>Official binaries are compiled on Ubuntu 14.04.</p></li>
+<li><p>32-bit binaries can be compiled from source.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Runs exported projects:</strong></p>
+<ul class="simple">
+<li><p>Android 4.4 and later.</p></li>
+<li><p>iOS 10.0 and later.</p></li>
+<li><p>HTML5 via WebAssembly (Firefox, Chrome, Edge, Opera).</p></li>
+<li><p><span class="xref std std-ref">Consoles</span>.</p></li>
+</ul>
+<p>Godot aims to be as platform-independent as possible and can be ported to new
+platforms with relative ease.</p>
+</div>
+<div class="section" id="editor">
+<h3>Editor<a class="headerlink" href="#editor" title="Permalink to this headline">¶</a></h3>
+<p><strong>Features:</strong></p>
+<ul>
+<li><p>Scene tree editor.</p></li>
+<li><p>Script editor.</p></li>
+<li><p>Support for <span class="xref std std-ref">external script editors</span> such as
+Visual Studio Code or Vim.</p></li>
+<li><p>GDScript <span class="xref std std-ref">debugger</span>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>No support for debugging in threads yet.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Visual profiler with CPU and GPU time indications.</p></li>
+<li><p>Performance monitoring tools.</p></li>
+<li><p>Live script reloading.</p></li>
+<li><p>Live scene editing.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Changes will reflect in the editor and will be kept after closing the running project.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Remote inspector.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Changes won't reflect in the editor and won't be kept after closing the running project.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Live camera replication.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Move the in-editor camera and see the result in the running project.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Use the editor in dozens of languages contributed by the community.</p></li>
+</ul>
+<p><strong>Plugins:</strong></p>
+<ul class="simple">
+<li><p>Editor plugins can be downloaded from the
+<span class="xref std std-ref">asset library</span> to extend editor functionality.</p></li>
+<li><p>Create your own plugins using GDScript to add new features or speed up your workflow.</p></li>
+<li><p>Download projects from the asset library in the project manager and import them directly.</p></li>
+</ul>
+</div>
+<div class="section" id="d-graphics">
+<h3>2D graphics<a class="headerlink" href="#d-graphics" title="Permalink to this headline">¶</a></h3>
+<p>Vulkan renderer.</p>
+<ul>
+<li><p>Sprite, polygon and line rendering.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>High-level tools to draw lines and polygons such as Polygon2D and Line2D.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>AnimatedSprite as a helper for creating animated sprites.</p></li>
+<li><p>Parallax layers.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Pseudo-3D support by automatically duplicating a layer several times.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>2D lighting with normal maps and specular maps.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Hard or soft shadows.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Font rendering using bitmaps or rasterization using FreeType.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Bitmap fonts can be exported using tools like BMFont.</p></li>
+<li><p>Dynamic fonts supports monochrome fonts as well as colored fonts.
+Supported formats are TTF and OTF.</p></li>
+<li><p>Dynamic fonts supports optional font outlines with adjustable width and color.</p></li>
+<li><p>Dynamic fonts supports variable fonts and OpenType features.</p></li>
+<li><p>Support for font oversampling to keep fonts sharp at higher resolutions.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>GPU-based particles with support for custom particle shaders.</p></li>
+<li><p>CPU-based particles.</p></li>
+</ul>
+</div>
+<div class="section" id="d-tools">
+<h3>2D tools<a class="headerlink" href="#d-tools" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>2D camera with built-in smoothing and drag margins.</p></li>
+<li><p>Path2D node to represent a path in 2D space.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Can be drawn in the editor or generated procedurally.</p></li>
+<li><p>PathFollow2D node to make nodes follow a Path2D.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>2D geometry helper class.</p></li>
+<li><p>Line2D node to draw textured 2D lines.</p></li>
+</ul>
+</div>
+<div class="section" id="d-physics">
+<h3>2D physics<a class="headerlink" href="#d-physics" title="Permalink to this headline">¶</a></h3>
+<p><strong>Physics bodies:</strong></p>
+<ul class="simple">
+<li><p>Static bodies.</p></li>
+<li><p>Rigid bodies.</p></li>
+<li><p>Kinematic bodies.</p></li>
+<li><p>Joints.</p></li>
+<li><p>Areas to detect bodies entering or leaving it.</p></li>
+</ul>
+<p><strong>Collision detection:</strong></p>
+<ul class="simple">
+<li><p>Built-in shapes: line, box, circle, capsule.</p></li>
+<li><p>Collision polygons (can be drawn manually or generated from a sprite in the editor).</p></li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h3>3D graphics<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Vulkan renderer.</p>
+<ul class="simple">
+<li><p>HDR rendering with sRGB.</p></li>
+<li><p>Perspective, orthographic and frustum-offset cameras.</p></li>
+</ul>
+<p><strong>Physically-based rendering:</strong></p>
+<ul class="simple">
+<li><p>Follows the Disney PBR model.</p></li>
+<li><p>Uses a roughness-metallic workflow with support for ORM textures.</p></li>
+<li><p>Normal mapping.</p></li>
+<li><p>Parallax/relief mapping with automatic level of detail based on distance.</p></li>
+<li><p>Sub-surface scattering and transmittance.</p></li>
+<li><p>Proximity fade (soft particles) and distance fade.</p></li>
+<li><p>Distance fade can use alpha blending or dithering to avoid going through
+the transparent pipeline.</p></li>
+<li><p>Dithering can be determined on a per-pixel or per-object basis.</p></li>
+</ul>
+<p><strong>Real-time lighting:</strong></p>
+<ul class="simple">
+<li><p>Directional lights (sun/moon). Up to 4 per scene.</p></li>
+<li><p>Omnidirectional lights.</p></li>
+<li><p>Spot lights with adjustable cone angle and attenuation.</p></li>
+<li><p>Adjustable light &quot;size&quot; for fake area lights (will also make shadows blurrier).</p></li>
+<li><p>Lights are rendered with clustered forward optimizations to decrease their
+individual cost.</p></li>
+</ul>
+<p><strong>Shadow mapping:</strong></p>
+<ul class="simple">
+<li><p><em>DirectionalLight:</em> Orthogonal (fastest), PSSM 2-split and 4-split.
+Supports blending between splits.</p></li>
+<li><p><em>OmniLight:</em> Dual paraboloid (fast) or cubemap (slower but more accurate).
+Supports colored projector textures in the form of panoramas.</p></li>
+<li><p><em>SpotLight:</em> Single texture. Supports colored projector textures.</p></li>
+<li><p>Shadow pancaking to decrease the amount of visible shadow acne and peter-panning.</p></li>
+<li><p>PCSS-like shadow blur based on the light size and distance from the surface
+the shadow is casted on.</p></li>
+<li><p>Adjustable blur on a per-light basis.</p></li>
+</ul>
+<p><strong>Global illumination with indirect lighting:</strong></p>
+<ul>
+<li><p>Baked lightmaps (fast, but can't be updated at run-time).</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Lightmaps are baked on the GPU using compute shaders.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>GI probes (slower, fully real-time). Supports reflections.</p></li>
+<li><p>Signed distance field GI (intermediate, supports dynamic lights but not
+dynamic occluders). Supports reflections.</p></li>
+<li><p>Global illumination uses a deferred pass to allow for adaptive subsampling.</p></li>
+</ul>
+<p><strong>Reflections:</strong></p>
+<ul class="simple">
+<li><p>Voxel-based reflections (when using GI probes) and SDF-based reflections (when using signed distance field GI).</p></li>
+<li><p>Fast baked reflections or slow real-time reflections using ReflectionProbe.
+Parallax correction can optionally be enabled.</p></li>
+<li><p>Screen-space reflections.</p></li>
+<li><p>Reflection techniques can be mixed together for greater accuracy.</p></li>
+</ul>
+<p><strong>Sky:</strong></p>
+<ul class="simple">
+<li><p>Panorama sky (using an HDRI).</p></li>
+<li><p>Procedural sky and Physically-based sky that respond to the DirectionalLights in the scene.</p></li>
+<li><p>Support for custom sky shaders.</p></li>
+<li><p>Radiance can be updated in real-time depending on the quality settings chosen.</p></li>
+</ul>
+<p><strong>Fog:</strong></p>
+<ul class="simple">
+<li><p>Depth fog (exponential or with custom attenuation).</p></li>
+<li><p>Height fog (floor or ceiling) with adjustable attenuation.</p></li>
+<li><p>Support for automatic depth fog color depending on the camera direction
+(to match the sun color).</p></li>
+<li><p>Optional transmittance to make lights more visible in the fog.</p></li>
+</ul>
+<p><strong>Particles:</strong></p>
+<ul class="simple">
+<li><p>GPU-based particles with support for custom particle shaders.</p></li>
+<li><p>CPU-based particles.</p></li>
+</ul>
+<p><strong>Post-processing:</strong></p>
+<ul class="simple">
+<li><p>Tonemapping (Linear, Reinhard, Filmic, ACES).</p></li>
+<li><p>Automatic exposure adjustments based on viewport brightness.</p></li>
+<li><p>Near and far depth of field with adjustable bokeh simulation.</p></li>
+<li><p>Screen-space ambient occlusion at half or full resolution.</p></li>
+<li><p>Glow/bloom with optional bicubic upscaling and several blend modes available:
+Screen, Soft Light, Add, Replace, Mix.</p></li>
+<li><p>Color correction using an one-dimensional ramp.</p></li>
+<li><p>Roughness limiter to reduce the impact of specular aliasing.</p></li>
+<li><p>Brightness, contrast and saturation adjustments.</p></li>
+</ul>
+<p><strong>Texture filtering:</strong></p>
+<ul class="simple">
+<li><p>Nearest, bilinear, trilinear or anisotropic filtering.</p></li>
+<li><p>Filtering options are defined on a per-use basis, not a per-texture basis.</p></li>
+</ul>
+<p><strong>Texture compression:</strong></p>
+<ul class="simple">
+<li><p>Basis Universal (slow, but results in smaller files).</p></li>
+<li><p>BPTC for high-quality compression (not supported on macOS).</p></li>
+<li><p>ETC2 (not supported on macOS).</p></li>
+<li><p>S3TC (not supported on mobile/Web platforms).</p></li>
+</ul>
+<p><strong>Anti-aliasing:</strong></p>
+<ul class="simple">
+<li><p>Fast approximate antialiasing (FXAA).</p></li>
+<li><p>Multi-sample antialiasing (MSAA).</p></li>
+</ul>
+<p>Most of these effects can be adjusted for better performance or to further
+improve quality. This can be helpful when using Godot for offline rendering.</p>
+</div>
+<div class="section" id="id2">
+<h3>3D tools<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad.</p></li>
+<li><p>Tools for <span class="xref std std-ref">procedural geometry generation</span>.</p></li>
+<li><p><span class="xref std std-ref">Constructive solid geometry</span> (intended for prototyping).</p></li>
+<li><p>Path3D node to represent a path in 3D space.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Can be drawn in the editor or generated procedurally.</p></li>
+<li><p>PathFollow3D node to make nodes follow a Path3D.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>3D geometry helper class.</p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h3>3D physics<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p><strong>Physics bodies:</strong></p>
+<ul class="simple">
+<li><p>Static bodies.</p></li>
+<li><p>Rigid bodies.</p></li>
+<li><p>Kinematic bodies.</p></li>
+<li><p>Vehicle bodies (intended for arcade physics, not simulation).</p></li>
+<li><p>Joints.</p></li>
+<li><p>Soft bodies.</p></li>
+<li><p>Ragdolls.</p></li>
+<li><p>Areas to detect bodies entering or leaving it.</p></li>
+</ul>
+<p><strong>Collision detection:</strong></p>
+<ul class="simple">
+<li><p>Built-in shapes: cuboid, sphere, capsule, cylinder (only with Bullet physics).</p></li>
+<li><p>Generate triangle collision shapes for any mesh from the editor.</p></li>
+<li><p>Generate one or several convex collision shapes for any mesh from the editor.</p></li>
+</ul>
+</div>
+<div class="section" id="shaders">
+<h3>Shaders<a class="headerlink" href="#shaders" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p><em>2D:</em> Custom vertex, fragment, and light shaders.</p></li>
+<li><p><em>3D:</em> Custom vertex, fragment, light, and sky shaders.</p></li>
+<li><p>Text-based shaders using a <span class="xref std std-ref">shader language inspired by GLSL</span>.</p></li>
+<li><p>Visual shader editor.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Support for visual shader plugins.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="scripting">
+<h3>Scripting<a class="headerlink" href="#scripting" title="Permalink to this headline">¶</a></h3>
+<p><strong>General:</strong></p>
+<ul class="simple">
+<li><p>Object-oriented design pattern with scripts extending nodes.</p></li>
+<li><p>Signals and groups for communicating between scripts.</p></li>
+<li><p>Support for <span class="xref std std-ref">cross-language scripting</span>.</p></li>
+<li><p>Many 2D and 3D linear algebra data types such as vectors and transforms.</p></li>
+</ul>
+<p><span class="xref std std-ref">GDScript:</span></p>
+<ul class="simple">
+<li><p><span class="xref std std-ref">High-level interpreted language</span> with
+<span class="xref std std-ref">optional static typing</span>.</p></li>
+<li><p>Syntax inspired by Python. However, GDScript is <strong>not</strong> based on Python.</p></li>
+<li><p>Syntax highlighting is provided on GitHub.</p></li>
+<li><p><span class="xref std std-ref">Use threads</span> to perform asynchronous actions
+or make use of multiple processor cores.</p></li>
+</ul>
+<p><span class="xref std std-ref">C#:</span></p>
+<ul>
+<li><p>Packaged in a separate binary to keep file sizes and dependencies down.</p></li>
+<li><p>Uses Mono 6.x.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Full support for the C# 8.0 syntax and features.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Supports all platforms.</p></li>
+<li><p>Using an external editor is recommended to benefit from IDE functionality.</p></li>
+</ul>
+<p><span class="xref std std-ref">VisualScript:</span></p>
+<ul class="simple">
+<li><p><span class="xref std std-ref">Graph-based visual scripting language</span>.</p></li>
+<li><p>Works best when used for specific purposes (such as level-specific logic)
+rather than as a language to create entire projects.</p></li>
+</ul>
+<p><strong>GDNative (C, C++, Rust, D, ...):</strong></p>
+<ul>
+<li><p>When you need it, link to native libraries for higher performance and third-party integrations.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>For scripting game logic, GDScript or C# are recommended if their
+performance is suitable.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Official bindings for C and C++.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Use any build system and language features you wish.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Maintained D, Kotlin, Python, Nim, and Rust bindings provided by the community.</p></li>
+</ul>
+</div>
+<div class="section" id="audio">
+<h3>Audio<a class="headerlink" href="#audio" title="Permalink to this headline">¶</a></h3>
+<p><strong>Features:</strong></p>
+<ul>
+<li><p>Mono, stereo, 5.1 and 7.1 output.</p></li>
+<li><p>Non-positional and positional playback in 2D and 3D.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Optional Doppler effect in 2D and 3D.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Support for re-routable <span class="xref std std-ref">audio buses</span> and effects
+with dozens of effects included.</p></li>
+<li><p>Listener3D node to listen from a position different than the camera in 3D.</p></li>
+<li><p>Audio input to record microphones.</p></li>
+<li><p>MIDI input.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>No support for MIDI output yet.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>APIs used:</strong></p>
+<ul class="simple">
+<li><p><em>Windows:</em> WASAPI.</p></li>
+<li><p><em>macOS:</em> CoreAudio.</p></li>
+<li><p><em>Linux:</em> PulseAudio or ALSA.</p></li>
+</ul>
+</div>
+<div class="section" id="import">
+<h3>Import<a class="headerlink" href="#import" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Support for <span class="xref std std-ref">custom import plugins</span>.</p></li>
+</ul>
+<p><strong>Formats:</strong></p>
+<ul>
+<li><p><em>Images:</em> See <span class="xref std std-ref">doc_import_images</span>.</p></li>
+<li><p><em>Audio:</em></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>WAV with optional IMA-ADPCM compression.</p></li>
+<li><p>Ogg Vorbis.</p></li>
+<li><p>MP3.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><em>3D scenes:</em></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>glTF 2.0 <em>(recommended)</em>.</p></li>
+<li><p><a class="reference external" href="https://github.com/godotengine/godot-blender-exporter">ESCN</a>
+(direct export from Blender).</p></li>
+<li><p>FBX.</p></li>
+<li><p>Collada (.dae).</p></li>
+<li><p>Wavefront OBJ (static scenes only, can be loaded directly as a mesh).</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="input">
+<h3>Input<a class="headerlink" href="#input" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>Input mapping system using hardcoded input events or remappable input actions.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Axis values can be mapped to two different actions with a configurable deadzone.</p></li>
+<li><p>Use the same code to support both keyboards and gamepads.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Keyboard input.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Keys can be mapped in &quot;physical&quot; mode to be independent of the keyboard layout.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Mouse input.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The mouse cursor can be visible, hidden, captured or confined within the window.</p></li>
+<li><p>When captured, raw input will be used on Windows and Linux to
+sidestep the OS' mouse acceleration settings.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Gamepad input (up to 8 simultaneous controllers).</p></li>
+<li><p>Pen/tablet input with pressure support.</p></li>
+</ul>
+</div>
+<div class="section" id="navigation">
+<h3>Navigation<a class="headerlink" href="#navigation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>A* algorithm in 2D and 3D.</p></li>
+<li><p>Navigation meshes with dynamic obstacle avoidance.</p></li>
+<li><p>Generate navigation meshes from the editor.</p></li>
+</ul>
+</div>
+<div class="section" id="networking">
+<h3>Networking<a class="headerlink" href="#networking" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>Low-level TCP networking using StreamPeer and TCP_Server.</p></li>
+<li><p>Low-level UDP networking using PacketPeer and UDPServer.</p></li>
+<li><p>Low-level HTTP requests using HTTPClient.</p></li>
+<li><p>High-level HTTP requests using HTTPRequest.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Supports HTTPS out of the box using bundled certificates.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>High-level multiplayer API using UDP and ENet.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Automatic replication using remote procedure calls (RPCs).</p></li>
+<li><p>Supports unreliable, reliable and ordered transfers.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>WebSocket client and server, available on all platforms.</p></li>
+<li><p>WebRTC client and server, available on all platforms.</p></li>
+<li><p>Support for UPnP to sidestep the requirement to forward ports when hosting
+a server behind a NAT.</p></li>
+</ul>
+</div>
+<div class="section" id="internationalization">
+<h3>Internationalization<a class="headerlink" href="#internationalization" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Full support for Unicode including emoji.</p></li>
+<li><p>Store localization strings using <span class="xref std std-ref">CSV</span>
+or <span class="xref std std-ref">gettext</span>.</p></li>
+<li><p>Use localized strings in your project automatically in GUI elements or by
+using the <code class="docutils literal notranslate"><span class="pre">tr()</span></code> function.</p></li>
+<li><p>Support for bidirectional typesetting and text shaping and OpenType localized forms.</p></li>
+<li><p>Automatic UI mirroring for right-to-left locales.</p></li>
+</ul>
+</div>
+<div class="section" id="windowing-and-os-integration">
+<h3>Windowing and OS integration<a class="headerlink" href="#windowing-and-os-integration" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>Move, resize, minimize, and maximize windows spawned by the project.</p></li>
+<li><p>Change the window title and icon.</p></li>
+<li><p>Request attention (will cause the title bar to blink on most platforms).</p></li>
+<li><p>Fullscreen mode.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Doesn't use exclusive fullscreen, so the screen resolution can't be changed this way.
+Use a Viewport with a different resolution instead.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Borderless windows (fullscreen or non-fullscreen).</p></li>
+<li><p>Ability to keep a window always on top.</p></li>
+<li><p>Transparent windows with per-pixel transparency.</p></li>
+<li><p>Global menu integration on macOS.</p></li>
+<li><p>Execute commands in a blocking or non-blocking manner.</p></li>
+<li><p>Open file paths and URLs using default or custom protocol handlers (if registered on the system).</p></li>
+<li><p>Parse custom command line arguments.</p></li>
+</ul>
+</div>
+<div class="section" id="mobile">
+<h3>Mobile<a class="headerlink" href="#mobile" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>In-app purchases on Android and iOS.</p></li>
+<li><p>Support for advertisements using third-party modules.</p></li>
+</ul>
+</div>
+<div class="section" id="xr-support-ar-and-vr">
+<h3>XR support (AR and VR)<a class="headerlink" href="#xr-support-ar-and-vr" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Support for ARKit on iOS out of the box.</p></li>
+<li><p>Support for the OpenXR and OpenVR APIs.</p></li>
+<li><p>Popular VR headsets like the Oculus Quest and HTC Vive are supported thanks to plugins.</p></li>
+</ul>
+</div>
+<div class="section" id="gui-system">
+<h3>GUI system<a class="headerlink" href="#gui-system" title="Permalink to this headline">¶</a></h3>
+<p>Godot's GUI is built using the same Control nodes used to make games in Godot.
+The editor UI can easily be extended in many ways using add-ons.</p>
+<p><strong>Nodes:</strong></p>
+<ul class="simple">
+<li><p>Buttons.</p></li>
+<li><p>Checkboxes, check buttons, radio buttons.</p></li>
+<li><p>Text entry using LineEdit (single line) and TextEdit (multiple lines).</p></li>
+<li><p>Dropdown menus using PopupMenu and OptionButton.</p></li>
+<li><p>Scrollbars.</p></li>
+<li><p>Labels.</p></li>
+<li><p>RichTextLabel for <span class="xref std std-ref">text formatted using BBCode</span>.</p></li>
+<li><p>Trees (can also be used to represent tables).</p></li>
+<li><p>Containers (horizontal, vertical, grid, center, margin, draggable splitter, ...).</p></li>
+<li><p>Controls can be rotated and scaled.</p></li>
+</ul>
+<p><strong>Sizing:</strong></p>
+<ul>
+<li><p>Anchors to keep GUI elements in a specific corner, edge or centered.</p></li>
+<li><p>Containers to place GUI elements automatically following certain rules.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><span class="xref std std-ref">Stack</span> layouts.</p></li>
+<li><p><span class="xref std std-ref">Grid</span> layouts.</p></li>
+<li><p><span class="xref std std-ref">Margin</span> and <span class="xref std std-ref">centered</span>
+layouts.</p></li>
+<li><p><span class="xref std std-ref">Draggable splitter</span> layouts.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Scale to multiple resolutions using the <code class="docutils literal notranslate"><span class="pre">2d</span></code> or <code class="docutils literal notranslate"><span class="pre">viewport</span></code> stretch modes.</p></li>
+<li><p>Support any aspect ratio using anchors and the <code class="docutils literal notranslate"><span class="pre">expand</span></code> stretch aspect.</p></li>
+</ul>
+<p><strong>Theming:</strong></p>
+<ul>
+<li><p>Built-in theme editor.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Generate a theme based on the current editor theme settings.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Procedural vector-based theming using <span class="xref std std-ref">class_StyleBoxFlat</span>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Supports rounded/beveled corners, drop shadows and per-border widths.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Texture-based theming using <span class="xref std std-ref">class_StyleBoxTexture</span>.</p></li>
+</ul>
+<p>Godot's small distribution size can make it a suitable alternative to frameworks
+like Electron or Qt.</p>
+</div>
+<div class="section" id="animation">
+<h3>Animation<a class="headerlink" href="#animation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Direct kinematics and inverse kinematics.</p></li>
+<li><p>Support for animating any property with customizable interpolation.</p></li>
+<li><p>Support for calling methods in animation tracks.</p></li>
+<li><p>Support for playing sounds in animation tracks.</p></li>
+<li><p>Support for Bézier curves in animation.</p></li>
+</ul>
+</div>
+<div class="section" id="formats">
+<h3>Formats<a class="headerlink" href="#formats" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>Scenes and resources can be saved in <span class="xref std std-ref">text-based</span> or binary formats.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Text-based formats are human-readable and more friendly to version control.</p></li>
+<li><p>Binary formats are faster to save/load for large scenes/resources.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Read and write text or binary files using <span class="xref std std-ref">class_File</span>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Can optionally be compressed or encrypted.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Read and write <span class="xref std std-ref">class_JSON</span> files.</p></li>
+<li><p>Read and write INI-style configuration files using <span class="xref std std-ref">class_ConfigFile</span>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Can (de)serialize any Godot datatype, including Vector, Color, ...</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Read XML files using <span class="xref std std-ref">class_XMLParser</span>.</p></li>
+<li><p>Pack game data into a PCK file (custom format optimized for fast seeking),
+into a ZIP archive, or directly into the executable for single-file distribution.</p></li>
+<li><p><span class="xref std std-ref">Export additional PCK files</span> that can be read
+by the engine to support mods and DLCs.</p></li>
+</ul>
+</div>
+<div class="section" id="miscellaneous">
+<h3>Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p><span class="xref std std-ref">Low-level access to servers</span> which allows bypassing
+the scene tree's overhead when needed.</p></li>
+<li><p>Command line interface for automation.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Export and deploy projects using continuous integration platforms.</p></li>
+<li><p><a class="reference external" href="https://github.com/godotengine/godot/tree/master/misc/dist/shell">Completion scripts</a>
+are available for Bash, zsh and fish.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Support for <span class="xref std std-ref">C++ modules</span> statically linked
+into the engine binary.</p></li>
+<li><p>Engine and editor written in C++17.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Can be <span class="xref std std-ref">compiled</span> using GCC,
+Clang and MSVC. MinGW is also supported.</p></li>
+<li><p>Friendly towards packagers. In most cases, system libraries can be used
+instead of the ones provided by Godot. The build system doesn't download anything.
+Builds can be fully reproducible.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Licensed under the permissive MIT license.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Open developement process with <span class="xref std std-ref">contributions welcome</span>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>The <a class="reference external" href="https://github.com/godotengine/godot-roadmap">roadmap</a> repository
+documents features that have been agreed upon and may be implemented in
+future Godot releases.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="docs_changelog.html" class="btn btn-neutral float-right" title="Documentation changelog" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="troubleshooting.html" class="btn btn-neutral float-left" title="Troubleshooting" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Fractural, Atlinx and contributors.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

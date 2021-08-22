@@ -1,0 +1,789 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documentation changelog &mdash; Fractural Visual Novel Engine latest documentation</title>
+
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    <meta name="theme-color" content="#3d8fcc">
+  
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Godot release policy" href="release_policy.html" />
+    <link rel="prev" title="List of features" href="list_of_features.html" />
+<meta name="doc_version" content="latest">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo_3_transparent.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">General</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">About</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#before-you-start">Before you start</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#about-godot-engine">About Godot Engine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#about-the-documentation">About the documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#organization-of-the-documentation">Organization of the documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html">Frequently asked questions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#what-can-i-do-with-godot-how-much-does-it-cost-what-are-the-license-terms">What can I do with Godot? How much does it cost? What are the license terms?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#which-platforms-are-supported-by-godot">Which platforms are supported by Godot?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#which-programming-languages-are-supported-in-godot">Which programming languages are supported in Godot?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#what-is-gdscript-and-why-should-i-use-it">What is GDScript and why should I use it?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#what-were-the-motivations-behind-creating-gdscript">What were the motivations behind creating GDScript?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#what-3d-model-formats-does-godot-support">What 3D model formats does Godot support?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#will-insert-closed-sdk-such-as-fmod-gameworks-etc-be-supported-in-godot">Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#why-does-godot-use-vulkan-or-opengl-instead-of-direct3d">Why does Godot use Vulkan or OpenGL instead of Direct3D?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#why-does-godot-aim-to-keep-its-core-feature-set-small">Why does Godot aim to keep its core feature set small?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#how-should-assets-be-created-to-handle-multiple-resolutions-and-aspect-ratios">How should assets be created to handle multiple resolutions and aspect ratios?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#how-can-i-extend-godot">How can I extend Godot?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#when-is-the-next-release-of-godot-out">When is the next release of Godot out?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#i-would-like-to-contribute-how-can-i-get-started">I would like to contribute! How can I get started?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#i-have-a-great-idea-for-godot-how-can-i-share-it">I have a great idea for Godot. How can I share it?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#is-it-possible-to-use-godot-to-create-non-game-applications">Is it possible to use Godot to create non-game applications?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#is-it-possible-to-use-godot-as-a-library">Is it possible to use Godot as a library?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#what-user-interface-toolkit-does-godot-use">What user interface toolkit does Godot use?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#why-does-godot-not-use-stl-standard-template-library">Why does Godot not use STL (Standard Template Library)?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#why-does-godot-not-use-exceptions">Why does Godot not use exceptions?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#why-does-godot-not-enforce-rtti">Why does Godot not enforce RTTI?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#does-godot-use-an-ecs-entity-component-system">Does Godot use an ECS (Entity Component System)?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#why-does-godot-not-force-users-to-implement-dod-data-oriented-design">Why does Godot not force users to implement DoD (Data-oriented Design)?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#how-can-i-support-godot-development-or-contribute">How can I support Godot development or contribute?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#who-is-working-on-godot-how-can-i-contact-you">Who is working on Godot? How can I contact you?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#everything-i-do-in-the-editor-or-project-manager-appears-delayed-by-one-frame">Everything I do in the editor or project manager appears delayed by one frame.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-editor-runs-slowly-and-uses-all-my-cpu-and-gpu-resources-making-my-computer-noisy">The editor runs slowly and uses all my CPU and GPU resources, making my computer noisy.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-editor-stutters-and-flickers-on-my-variable-refresh-rate-monitor-g-sync-freesync">The editor stutters and flickers on my variable refresh rate monitor (G-Sync/FreeSync).</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-grid-disappears-and-meshes-turn-black-when-i-rotate-the-3d-camera-in-the-editor">The grid disappears and meshes turn black when I rotate the 3D camera in the editor.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-editor-or-project-takes-a-very-long-time-to-start">The editor or project takes a very long time to start.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#editor-tooltips-in-the-inspector-and-node-docks-blink-when-they-re-displayed">Editor tooltips in the Inspector and Node docks blink when they're displayed.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-godot-editor-appears-frozen-after-clicking-the-system-console">The Godot editor appears frozen after clicking the system console.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#some-text-such-as-no-dc-appears-in-the-top-left-corner-of-the-project-manager-and-editor-window">Some text such as &quot;NO DC&quot; appears in the top-left corner of the project manager and editor window.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-project-window-appears-blurry-unlike-the-editor">The project window appears blurry, unlike the editor.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-project-window-doesn-t-appear-centered-when-i-run-the-project">The project window doesn't appear centered when I run the project.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html#the-project-works-when-run-from-the-editor-but-fails-to-load-some-files-when-running-from-an-exported-copy">The project works when run from the editor, but fails to load some files when running from an exported copy.</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="list_of_features.html">List of features</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="list_of_features.html#features">Features</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#platforms">Platforms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#editor">Editor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#d-graphics">2D graphics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#d-tools">2D tools</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#d-physics">2D physics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#id1">3D graphics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#id2">3D tools</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#id3">3D physics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#shaders">Shaders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#scripting">Scripting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#audio">Audio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#import">Import</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#input">Input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#navigation">Navigation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#networking">Networking</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#internationalization">Internationalization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#windowing-and-os-integration">Windowing and OS integration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#mobile">Mobile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#xr-support-ar-and-vr">XR support (AR and VR)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#gui-system">GUI system</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#animation">Animation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#formats">Formats</a></li>
+<li class="toctree-l4"><a class="reference internal" href="list_of_features.html#miscellaneous">Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Documentation changelog</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#new-pages-since-version-3-3">New pages since version 3.3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#c">C++</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gdscript">GDScript</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#new-pages-since-version-3-2">New pages since version 3.2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#d">3D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#about">About</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#best-practices">Best practices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#community">Community</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#development">Development</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#editor">Editor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#export">Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#input">Input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#math">Math</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#platform-specific">Platform-specific</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#physics">Physics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#shaders">Shaders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scripting">Scripting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vr">VR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#user-interface-ui">User Interface (UI)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#new-pages-since-version-3-1">New pages since version 3.1</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#project-workflow">Project workflow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1">2D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#audio">Audio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Math</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inputs">Inputs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#internationalization">Internationalization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#shading">Shading</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#networking">Networking</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">VR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#plugins">Plugins</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#multi-threading">Multi-threading</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#creating-content">Creating content</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#optimization">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#legal">Legal</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#new-pages-since-version-3-0">New pages since version 3.0</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#step-by-step">Step by step</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">Scripting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">Project workflow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">2D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id7">3D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id8">Physics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#animation">Animation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gui">GUI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#viewports">Viewports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">Shading</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id10">Plugins</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id11">Platform-specific</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id12">Multi-threading</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id13">Creating content</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#miscellaneous">Miscellaneous</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#compiling">Compiling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#engine-development">Engine development</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="release_policy.html">Godot release policy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="release_policy.html#godot-versioning">Godot versioning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="release_policy.html#release-support-timeline">Release support timeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="release_policy.html#when-is-the-next-release-out">When is the next release out?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="complying_with_licenses.html">Complying with licenses</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="complying_with_licenses.html#what-are-licenses">What are licenses?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="complying_with_licenses.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="complying_with_licenses.html#inclusion">Inclusion</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#credits-screen">Credits screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#licenses-screen">Licenses screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#output-log">Output log</a></li>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#accompanying-file">Accompanying file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#printed-manual">Printed manual</a></li>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#link-to-the-license">Link to the license</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="complying_with_licenses.html#third-party-licenses">Third-party licenses</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#freetype">FreeType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#enet">ENet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="complying_with_licenses.html#mbedtls">MBedTLS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../step-by-step/index.html">Step by step</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../step-by-step/introduction.html">Introduction to Fractural VNE</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Fractural Visual Novel Engine</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">About</a> &raquo;</li>
+        
+      <li>Documentation changelog</li>
+    
+    
+
+
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/about/docs_changelog.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="documentation-changelog">
+<span id="doc-docs-changelog"></span><h1>Documentation changelog<a class="headerlink" href="#documentation-changelog" title="Permalink to this headline">¶</a></h1>
+<p>The documentation is continually being improved. New releases
+include new pages, fixes and updates to existing pages, and many updates
+to the <span class="xref std std-ref">class reference</span>. Below is a list of new pages
+added since version 3.0.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This document only contains new pages so not all changes are reflected,
+many pages have been substantially updated but are not reflected in this document.</p>
+</div>
+<div class="section" id="new-pages-since-version-3-3">
+<h2>New pages since version 3.3<a class="headerlink" href="#new-pages-since-version-3-3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="c">
+<h3>C++<a class="headerlink" href="#c" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_cpp_usage_guidelines</span></p></li>
+</ul>
+</div>
+<div class="section" id="gdscript">
+<h3>GDScript<a class="headerlink" href="#gdscript" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_gdscript_documentation_comments</span></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="new-pages-since-version-3-2">
+<h2>New pages since version 3.2<a class="headerlink" href="#new-pages-since-version-3-2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="d">
+<h3>3D<a class="headerlink" href="#d" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_3d_rendering_limitations</span></p></li>
+</ul>
+</div>
+<div class="section" id="about">
+<h3>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="troubleshooting.html#doc-troubleshooting"><span class="std std-ref">Troubleshooting</span></a></p></li>
+<li><p><a class="reference internal" href="list_of_features.html#doc-list-of-features"><span class="std std-ref">List of features</span></a></p></li>
+<li><p><a class="reference internal" href="release_policy.html#doc-release-policy"><span class="std std-ref">Godot release policy</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="best-practices">
+<h3>Best practices<a class="headerlink" href="#best-practices" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_version_control_systems</span></p></li>
+</ul>
+</div>
+<div class="section" id="community">
+<h3>Community<a class="headerlink" href="#community" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_best_practices_for_engine_contributors</span></p></li>
+<li><p><span class="xref std std-ref">doc_bisecting_regressions</span></p></li>
+<li><p><span class="xref std std-ref">doc_editor_and_docs_localization</span></p></li>
+</ul>
+</div>
+<div class="section" id="development">
+<h3>Development<a class="headerlink" href="#development" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_introduction_to_editor_development</span></p></li>
+<li><p><span class="xref std std-ref">doc_editor_style_guide</span></p></li>
+<li><p><span class="xref std std-ref">doc_common_engine_methods_and_macros</span></p></li>
+<li><p><span class="xref std std-ref">doc_vulkan_validation_layers</span></p></li>
+<li><p><span class="xref std std-ref">doc_gdscript_grammar</span></p></li>
+<li><p>Configuring an IDE: <span class="xref std std-ref">doc_configuring_an_ide_code_blocks</span></p></li>
+</ul>
+</div>
+<div class="section" id="editor">
+<h3>Editor<a class="headerlink" href="#editor" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_default_key_mapping</span></p></li>
+<li><p><span class="xref std std-ref">doc_using_the_web_editor</span></p></li>
+</ul>
+</div>
+<div class="section" id="export">
+<h3>Export<a class="headerlink" href="#export" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_exporting_for_dedicated_servers</span></p></li>
+</ul>
+</div>
+<div class="section" id="input">
+<h3>Input<a class="headerlink" href="#input" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_controllers_gamepads_joysticks</span></p></li>
+</ul>
+</div>
+<div class="section" id="math">
+<h3>Math<a class="headerlink" href="#math" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_random_number_generation</span></p></li>
+</ul>
+</div>
+<div class="section" id="platform-specific">
+<h3>Platform-specific<a class="headerlink" href="#platform-specific" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_android_custom_build</span></p></li>
+<li><p><span class="xref std std-ref">doc_plugins_for_ios</span></p></li>
+<li><p><span class="xref std std-ref">doc_ios_plugin</span></p></li>
+<li><p><span class="xref std std-ref">doc_html5_shell_classref</span></p></li>
+</ul>
+</div>
+<div class="section" id="physics">
+<h3>Physics<a class="headerlink" href="#physics" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_collision_shapes_2d</span></p></li>
+<li><p><span class="xref std std-ref">doc_collision_shapes_3d</span></p></li>
+</ul>
+</div>
+<div class="section" id="shaders">
+<h3>Shaders<a class="headerlink" href="#shaders" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_shaders_style_guide</span></p></li>
+</ul>
+</div>
+<div class="section" id="scripting">
+<h3>Scripting<a class="headerlink" href="#scripting" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_debugger_panel</span></p></li>
+<li><p><span class="xref std std-ref">doc_creating_script_templates</span></p></li>
+<li><p><span class="xref std std-ref">doc_evaluating_expressions</span></p></li>
+<li><p><span class="xref std std-ref">doc_what_is_gdnative</span></p></li>
+<li><p><span class="xref std std-ref">doc_gdscript_warning_system</span> (split from <span class="xref std std-ref">doc_gdscript_static_typing</span>)</p></li>
+<li><p><span class="xref std std-ref">doc_custom_visualscript_nodes</span></p></li>
+</ul>
+</div>
+<div class="section" id="vr">
+<h3>VR<a class="headerlink" href="#vr" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_developing_for_oculus_quest</span></p></li>
+</ul>
+</div>
+<div class="section" id="user-interface-ui">
+<h3>User Interface (UI)<a class="headerlink" href="#user-interface-ui" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_control_node_gallery</span></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="new-pages-since-version-3-1">
+<h2>New pages since version 3.1<a class="headerlink" href="#new-pages-since-version-3-1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="project-workflow">
+<h3>Project workflow<a class="headerlink" href="#project-workflow" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_android_custom_build</span></p></li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h3>2D<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_2d_sprite_animation</span></p></li>
+</ul>
+</div>
+<div class="section" id="audio">
+<h3>Audio<a class="headerlink" href="#audio" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_recording_with_microphone</span></p></li>
+<li><p><span class="xref std std-ref">doc_sync_with_audio</span></p></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h3>Math<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_beziers_and_curves</span></p></li>
+<li><p><span class="xref std std-ref">doc_interpolation</span></p></li>
+</ul>
+</div>
+<div class="section" id="inputs">
+<h3>Inputs<a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_input_examples</span></p></li>
+</ul>
+</div>
+<div class="section" id="internationalization">
+<h3>Internationalization<a class="headerlink" href="#internationalization" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_localization_using_gettext</span></p></li>
+</ul>
+</div>
+<div class="section" id="shading">
+<h3>Shading<a class="headerlink" href="#shading" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Your First Shader Series:</dt><dd><ul>
+<li><p><span class="xref std std-ref">doc_introduction_to_shaders</span></p></li>
+<li><p><span class="xref std std-ref">doc_your_first_canvasitem_shader</span></p></li>
+<li><p><span class="xref std std-ref">doc_your_first_spatial_shader</span></p></li>
+<li><p><span class="xref std std-ref">doc_your_second_spatial_shader</span></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><span class="xref std std-ref">doc_visual_shaders</span></p></li>
+</ul>
+</div>
+<div class="section" id="networking">
+<h3>Networking<a class="headerlink" href="#networking" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_webrtc</span></p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h3>VR<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_vr_starter_tutorial_part_one</span></p></li>
+<li><p><span class="xref std std-ref">doc_vr_starter_tutorial_part_two</span></p></li>
+</ul>
+</div>
+<div class="section" id="plugins">
+<h3>Plugins<a class="headerlink" href="#plugins" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_android_plugin</span></p></li>
+<li><p><span class="xref std std-ref">doc_inspector_plugins</span></p></li>
+<li><p><span class="xref std std-ref">doc_visual_shader_plugins</span></p></li>
+</ul>
+</div>
+<div class="section" id="multi-threading">
+<h3>Multi-threading<a class="headerlink" href="#multi-threading" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_using_multiple_threads</span></p></li>
+</ul>
+</div>
+<div class="section" id="creating-content">
+<h3>Creating content<a class="headerlink" href="#creating-content" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Procedural geometry series:</dt><dd><ul class="simple">
+<li><p><span class="xref std std-ref">Procedural geometry</span></p></li>
+<li><p><span class="xref std std-ref">doc_arraymesh</span></p></li>
+<li><p><span class="xref std std-ref">doc_surfacetool</span></p></li>
+<li><p><span class="xref std std-ref">doc_meshdatatool</span></p></li>
+<li><p><span class="xref std std-ref">doc_immediategeometry</span></p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="optimization">
+<h3>Optimization<a class="headerlink" href="#optimization" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_using_multimesh</span></p></li>
+<li><p><span class="xref std std-ref">doc_using_servers</span></p></li>
+</ul>
+</div>
+<div class="section" id="legal">
+<h3>Legal<a class="headerlink" href="#legal" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="complying_with_licenses.html#doc-complying-with-licenses"><span class="std std-ref">Complying with licenses</span></a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="new-pages-since-version-3-0">
+<h2>New pages since version 3.0<a class="headerlink" href="#new-pages-since-version-3-0" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="step-by-step">
+<h3>Step by step<a class="headerlink" href="#step-by-step" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_signals</span></p></li>
+<li><p>Exporting</p></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h3>Scripting<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_gdscript_static_typing</span></p></li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h3>Project workflow<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>Best Practices:</p>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_introduction_best_practices</span></p></li>
+<li><p><span class="xref std std-ref">doc_what_are_godot_classes</span></p></li>
+<li><p><span class="xref std std-ref">doc_scene_organization</span></p></li>
+<li><p><span class="xref std std-ref">doc_scenes_versus_scripts</span></p></li>
+<li><p><span class="xref std std-ref">doc_autoloads_versus_internal_nodes</span></p></li>
+<li><p><span class="xref std std-ref">doc_node_alternatives</span></p></li>
+<li><p><span class="xref std std-ref">doc_godot_interfaces</span></p></li>
+<li><p><span class="xref std std-ref">doc_godot_notifications</span></p></li>
+<li><p><span class="xref std std-ref">doc_data_preferences</span></p></li>
+<li><p><span class="xref std std-ref">doc_logic_preferences</span></p></li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h3>2D<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_2d_lights_and_shadows</span></p></li>
+<li><p><span class="xref std std-ref">doc_2d_meshes</span></p></li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h3>3D<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_csg_tools</span></p></li>
+<li><p><span class="xref std std-ref">doc_animating_thousands_of_fish</span></p></li>
+<li><p><span class="xref std std-ref">doc_controlling_thousands_of_fish</span></p></li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h3>Physics<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_ragdoll_system</span></p></li>
+<li><p><span class="xref std std-ref">doc_soft_body</span></p></li>
+</ul>
+</div>
+<div class="section" id="animation">
+<h3>Animation<a class="headerlink" href="#animation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_2d_skeletons</span></p></li>
+<li><p><span class="xref std std-ref">doc_animation_tree</span></p></li>
+</ul>
+</div>
+<div class="section" id="gui">
+<h3>GUI<a class="headerlink" href="#gui" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_gui_containers</span></p></li>
+</ul>
+</div>
+<div class="section" id="viewports">
+<h3>Viewports<a class="headerlink" href="#viewports" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_viewport_as_texture</span></p></li>
+<li><p><span class="xref std std-ref">doc_custom_postprocessing</span></p></li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h3>Shading<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_converting_glsl_to_godot_shaders</span></p></li>
+<li><p><span class="xref std std-ref">doc_advanced_postprocessing</span></p></li>
+</ul>
+<p>Shading Reference:</p>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_introduction_to_shaders</span></p></li>
+<li><p><span class="xref std std-ref">doc_shading_language</span></p></li>
+<li><p><span class="xref std std-ref">doc_spatial_shader</span></p></li>
+<li><p><span class="xref std std-ref">doc_canvas_item_shader</span></p></li>
+<li><p><span class="xref std std-ref">doc_particle_shader</span></p></li>
+</ul>
+</div>
+<div class="section" id="id10">
+<h3>Plugins<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_making_main_screen_plugins</span></p></li>
+<li><p><span class="xref std std-ref">doc_spatial_gizmo_plugins</span></p></li>
+</ul>
+</div>
+<div class="section" id="id11">
+<h3>Platform-specific<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_customizing_html5_shell</span></p></li>
+</ul>
+</div>
+<div class="section" id="id12">
+<h3>Multi-threading<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_thread_safe_apis</span></p></li>
+</ul>
+</div>
+<div class="section" id="id13">
+<h3>Creating content<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_making_trees</span></p></li>
+</ul>
+</div>
+<div class="section" id="miscellaneous">
+<h3>Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_jitter_stutter</span></p></li>
+<li><p><span class="xref std std-ref">doc_running_code_in_the_editor</span></p></li>
+<li><p><span class="xref std std-ref">doc_change_scenes_manually</span></p></li>
+<li><p><span class="xref std std-ref">doc_gles2_gles3_differences</span></p></li>
+</ul>
+</div>
+<div class="section" id="compiling">
+<h3>Compiling<a class="headerlink" href="#compiling" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_optimizing_for_size</span></p></li>
+<li><p><span class="xref std std-ref">doc_compiling_with_script_encryption_key</span></p></li>
+</ul>
+</div>
+<div class="section" id="engine-development">
+<h3>Engine development<a class="headerlink" href="#engine-development" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref std std-ref">doc_binding_to_external_libraries</span></p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="release_policy.html" class="btn btn-neutral float-right" title="Godot release policy" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="list_of_features.html" class="btn btn-neutral float-left" title="List of features" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Fractural, Atlinx and contributors.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

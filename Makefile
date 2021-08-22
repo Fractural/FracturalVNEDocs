@@ -13,6 +13,8 @@ help:
 
 .PHONY: help Makefile
 
+# NOTE: `make github` does NOT work in windows powershell.
+#		Use git bash instead to run `make github`.
 github:
 	@make html
 	@cp -a build/html/. ./docs
