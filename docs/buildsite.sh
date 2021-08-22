@@ -2,8 +2,9 @@
 set -x
 
 apt-get update
-apt-get -y install git rsync python3-sphinx
 apt-get -y install python3
+
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 
 pwd ls -lah
