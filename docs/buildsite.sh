@@ -1,9 +1,9 @@
 #!/bin/bash
 set -x
 
-pip install -r requirements.txt
 apt-get update
 apt-get -y install git rsync python3-sphinx
+pip install -r requirements.txt
 
 pwd ls -lah
 export SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct)
