@@ -29,6 +29,8 @@ release = '1.0.0'
 
 # -- General configuration ---------------------------------------------------
 
+master_doc = "index"
+
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
@@ -116,7 +118,7 @@ html_theme_options = {
     "collapse_navigation": False,
 }
 
-html_logo = "img/logo_3_transparent.png"
+html_logo = "img/logo_transparent.png"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -136,6 +138,8 @@ gettext_compact = False     # optional.
 
 # Custom 4O4 page HTML template.
 # https://github.com/readthedocs/sphinx-notfound-page
+notfound_urls_prefix = ''
+
 notfound_context = {
     "title": "Page not found",
     "body": """
