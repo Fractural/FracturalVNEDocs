@@ -3,10 +3,10 @@ set -x
 
 apt-get update
 apt-get -y install python3
+apt-get install python3-pip
 
-python -m pip install --upgrade pip
 pip install -r requirements.txt
-
+pip3 install -r requirements.txt
 pwd ls -lah
 export SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct)
  
