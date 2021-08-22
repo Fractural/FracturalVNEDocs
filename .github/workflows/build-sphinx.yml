@@ -33,6 +33,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          echo "FIND ALL FILES 1.5:"
+          find .
           chmod +x "docs/buildsite.sh"
           "docs/buildsite.sh"
         shell: bash
