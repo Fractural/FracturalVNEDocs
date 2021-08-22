@@ -17,11 +17,10 @@ jobs:
     container: debian:buster-slim
 
     steps:
-    
+      - uses: actions/setup-python@v1
       - name: Get prerequisites and clone repository
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        uses: actions/setup-python@v1
         run: |
           set -x
           apt-get update
