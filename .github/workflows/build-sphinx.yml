@@ -25,16 +25,12 @@ jobs:
           apt-get update
           apt-get install -y git
           git clone "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" .
-          echo "FIND ALL FILES 1:"
-          find .
         shell: bash
 
       - name: Run build script for Sphinx pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "FIND ALL FILES 1.5:"
-          find .
           chmod +x "docs/buildsite.sh"
           "docs/buildsite.sh"
         shell: bash

@@ -1,9 +1,6 @@
 #!/bin/bash
 set -x
 
-echo "FIND ALL FILES 2:"
-find .
-
 apt-get update
 apt-get -y install python3
 apt-get -y install python3-pip
@@ -27,22 +24,13 @@ make html
 # Update GitHub Pages #
 #######################
 
-echo "FIND ALL FILES 3:"
-find .
-
 git config --global user.name "${GITHUB_ACTOR}"
 git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
  
 docroot=`mktemp -d`
 rsync -av "build/html/" "${docroot}/"
 
-echo "FIND ALL FILES 5:"
-find .
-
 pushd "${docroot}"
-
-echo "FIND ALL FILES 6:"
-find .
 
 git init
 git remote add deploy "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
