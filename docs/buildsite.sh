@@ -32,7 +32,7 @@ rsync -av "build/html/" "${docroot}/"
 pushd "${docroot}"
 
 echo "FIND ALL FILES:"
-find . -name
+find
 
 git init
 git remote add deploy "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
