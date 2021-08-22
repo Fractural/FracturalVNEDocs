@@ -1,7 +1,7 @@
 #!/bin/bash
 set -x
 
-echo "FIND ALL FILES 1:"
+echo "FIND ALL FILES 2:"
 find .
 
 apt-get update
@@ -26,15 +26,21 @@ make html
 # Update GitHub Pages #
 #######################
 
+echo "FIND ALL FILES 3:"
+find .
+
 git config --global user.name "${GITHUB_ACTOR}"
 git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
  
 docroot=`mktemp -d`
 rsync -av "build/html/" "${docroot}/"
- 
+
+echo "FIND ALL FILES 5:"
+find .
+
 pushd "${docroot}"
 
-echo "FIND ALL FILES 2:"
+echo "FIND ALL FILES 6:"
 find .
 
 git init
