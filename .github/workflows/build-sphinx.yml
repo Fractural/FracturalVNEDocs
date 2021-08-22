@@ -18,6 +18,17 @@ jobs:
 
     steps:
       - uses: actions/setup-python@v1
+
+      - name: Update PATH
+        if: ${{ matrix.os != 'Windows' }}
+        shell: bash
+        run: echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: Update Path for Windows
+        if: ${{ matrix.os == 'Windows' }}
+        shell: bash
+        run: echo "$APPDATA\Python\Scripts" >> $GITHUB_PATH
+        
       - name: Get prerequisites and clone repository
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
