@@ -10,7 +10,14 @@ Welcome to the documentation of Fractural Visual Novel Engine, a free and open s
 
 .. toctree::
    :maxdepth: 1
-   :caption: Geneasdfral
+   :caption: General
    :name: sec-general
 
    about/index
+
+.. toctree::
+	:maxdepth: 1
+	:caption: Getting Started
+	:name: sec-getting-started
+
+	step-by-step/index

@@ -2,7 +2,7 @@
 // Set this to `true` when the `latest` branch is significantly incompatible with the
 // current `stable` branch, which can lead to confusion for users that land on
 // `latest` instead of `stable`.
-const inDev = true;
+const inDev = false;
 
 // Handle page scroll and adjust sidebar accordingly.
 
