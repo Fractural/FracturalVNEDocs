@@ -5,8 +5,8 @@ Documentation for the [Fractural Visual Novel Engine]("https://github.com/Fractu
 Built with Sphinx and Read the Docs.
 
 Available on:
-(Github Pages)[https://fractural.github.io/FracturalVNEDocs]
-(Read the Docs)[https://fracturalvne.readthedocs.io/]
+[Github Pages](https://fractural.github.io/FracturalVNEDocs)
+[Read the Docs](https://fracturalvne.readthedocs.io/)
 
 ## How to Build
 1. To build it you'll need [Python](https://www.python.org/downloads/), [CMake](https://cmake.org/install/), and some other libraries.
