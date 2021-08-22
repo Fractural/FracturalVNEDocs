@@ -136,9 +136,18 @@ locale_dirs = ['locale/']   # path is example but recommended.
 gettext_compact = False     # optional.
 
 
+# on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
+on_rtd = os.environ.get("READTHEDOCS", None) == "True"
+
+
 # Custom 4O4 page HTML template.
 # https://github.com/readthedocs/sphinx-notfound-page
-notfound_urls_prefix = ''
+
+# Don't add `/en/latest` prefix during local development.
+# This makes it easier to test the custom 404 page by loading `/404.html`
+# on a local web server.
+if not on_rtd:
+    notfound_urls_prefix = ''
 
 notfound_context = {
     "title": "Page not found",
