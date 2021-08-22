@@ -31,11 +31,8 @@ rsync -av "build/html/" "${docroot}/"
  
 pushd "${docroot}"
 
-echo "LISTING DIR FILES:"
-for entry in "."/*
-do
-  echo "$entry"
-done
+echo "FIND ALL FILES:"
+find . -name
 
 git init
 git remote add deploy "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
