@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo -i
 set -x
 
 apt-get update
