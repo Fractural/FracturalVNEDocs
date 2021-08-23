@@ -148,6 +148,8 @@ on_rtd = os.environ.get("READTHEDOCS", None) == "True"
 # on a local web server.
 if not on_rtd:
     notfound_urls_prefix = ''
+else:
+	notfound_urls_prefix = "FracturalVNEDocs"
 
 notfound_context = {
     "title": "Page not found",
