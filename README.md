@@ -1,6 +1,6 @@
 # Fractural VNE Docs
 
-Documentation for the [Fractural Visual Novel Engine]("https://github.com/Fractural/FracturalVisualNovelEngine").
+Documentation for the [Fractural Visual Novel Engine](https://github.com/Fractural/FracturalVisualNovelEngine).
 
 Built with [Sphinx](https://www.sphinx-doc.org/en/master/), [Read the Docs](https://readthedocs.org/) and a customized version of the [Godot Docs' sphinx theme](https://github.com/godotengine/godot-docs).
 

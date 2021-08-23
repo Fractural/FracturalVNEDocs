@@ -146,10 +146,10 @@ on_rtd = os.environ.get("READTHEDOCS", None) == "True"
 # Don't add `/en/latest` prefix during local development.
 # This makes it easier to test the custom 404 page by loading `/404.html`
 # on a local web server.
-if not on_rtd:
-    notfound_urls_prefix = ''
-else:
-	notfound_urls_prefix = "FracturalVNEDocs/"
+#if not on_rtd:
+#    notfound_urls_prefix = ''
+#else:
+notfound_urls_prefix = "FracturalVNEDocs/"
 
 notfound_context = {
     "title": "Page not found",
