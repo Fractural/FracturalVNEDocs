@@ -12,7 +12,6 @@
 #
 
 import os
-from posixpath import join
 import sys
 import sphinx_rtd_theme
 sys.path.insert(0, os.path.abspath('_extensions'))
@@ -104,7 +103,7 @@ highlight_language = "gdscript"
 #
 # on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
 on_rtd = os.environ.get("READTHEDOCS", None) == "True"
-on_gh_pages = os.environ.get("GITHUBPAGES", None) == "True"
+on_gh_pages = os.environ.get("GITHUB_REPOSITORY", None) == "True"
 
 html_theme = "sphinx_rtd_theme"
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
@@ -151,22 +150,21 @@ elif not on_rtd:
 
 notfound_context = {
     "title": "Page not found",
-    "body": "<p>" + ', '.join(os.environ) + "</p>"
-	# """
-    #     <h1>Page not found</h1>
-    #     <p>
-    #         Sorry, we couldn't find that page. It may have been renamed or removed
-    #         in the version of the documentation you're currently browsing.
-    #     </p>
-    #     <p>
-    #         If you're currently browsing the
-    #         <em>latest</em> version of the documentation, try browsing the
-    #         <a href="/en/stable/"><em>stable</em> version of the documentation</a>.
-    #     </p>
-    #     <p>
-    #         Alternatively, use the
-    #         <a href="#" onclick="$('#rtd-search-form [name=\\'q\\']').focus()">Search docs</a>
-    #         box on the left or <a href="/">go to the homepage</a>.
-    #     </p>
-    # """,
+    "body": """
+        <h1>Page not found</h1>
+        <p>
+            Sorry, we couldn't find that page. It may have been renamed or removed
+            in the version of the documentation you're currently browsing.
+        </p>
+        <p>
+            If you're currently browsing the
+            <em>latest</em> version of the documentation, try browsing the
+            <a href="/en/stable/"><em>stable</em> version of the documentation</a>.
+        </p>
+        <p>
+            Alternatively, use the
+            <a href="#" onclick="$('#rtd-search-form [name=\\'q\\']').focus()">Search docs</a>
+            box on the left or <a href="/">go to the homepage</a>.
+        </p>
+    """,
 }
