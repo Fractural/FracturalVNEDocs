@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta property="og:title" content="Complying with licenses" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="about/complying_with_licenses.html" />
@@ -358,9 +359,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="complying-with-licenses">
+  <section id="complying-with-licenses">
 <span id="doc-complying-with-licenses"></span><h1>Complying with licenses<a class="headerlink" href="#complying-with-licenses" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="what-are-licenses">
+<section id="what-are-licenses">
 <h2>What are licenses?<a class="headerlink" href="#what-are-licenses" title="Permalink to this headline">¶</a></h2>
 <p>Godot is created and distributed under the <a class="reference external" href="https://opensource.org/licenses/MIT">MIT License</a>.
 It doesn't have a sole owner either, as every contributor that submits code to
@@ -370,8 +371,8 @@ contribution.</p>
 distribute the software (and derivative projects, including games made with it).
 Your game or project can have a different license, but it still needs to comply
 with the original one.</p>
-</div>
-<div class="section" id="requirements">
+</section>
+<section id="requirements">
 <h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
 <p>In the case of the MIT license, the only requirement is to include the license
 text somewhere in your game or derivative project.</p>
@@ -390,45 +391,45 @@ Copyright (c) 2014-2021 Godot Engine contributors.</p>
 your Godot projects under any license and to create commercial games with
 the engine.</p>
 </div>
-</div>
-<div class="section" id="inclusion">
+</section>
+<section id="inclusion">
 <h2>Inclusion<a class="headerlink" href="#inclusion" title="Permalink to this headline">¶</a></h2>
 <p>The license does not specify how it has to be included, so anything is valid as
 long as it can be displayed under some condition. These are the most common
 approaches (only need to implement one of them, not all).</p>
-<div class="section" id="credits-screen">
+<section id="credits-screen">
 <h3>Credits screen<a class="headerlink" href="#credits-screen" title="Permalink to this headline">¶</a></h3>
 <p>Include the above license text somewhere in the credits screen. It can be at the
 bottom after showing the rest of the credits. Most large studios use this
 approach with open source licenses.</p>
-</div>
-<div class="section" id="licenses-screen">
+</section>
+<section id="licenses-screen">
 <h3>Licenses screen<a class="headerlink" href="#licenses-screen" title="Permalink to this headline">¶</a></h3>
 <p>Some games have a special menu (often in the settings) to display licenses.</p>
-</div>
-<div class="section" id="output-log">
+</section>
+<section id="output-log">
 <h3>Output log<a class="headerlink" href="#output-log" title="Permalink to this headline">¶</a></h3>
 <p>Just printing the licensing text using the <span class="xref std std-ref">print()</span>
 function may be enough on platforms where a global output log is readable.
 This is the case on desktop platforms, Android and HTML5 (but not iOS and UWP).</p>
-</div>
-<div class="section" id="accompanying-file">
+</section>
+<section id="accompanying-file">
 <h3>Accompanying file<a class="headerlink" href="#accompanying-file" title="Permalink to this headline">¶</a></h3>
 <p>If the game is distributed on desktop platforms, a file containing the license
 can be added to the software that is installed to the user PC.</p>
-</div>
-<div class="section" id="printed-manual">
+</section>
+<section id="printed-manual">
 <h3>Printed manual<a class="headerlink" href="#printed-manual" title="Permalink to this headline">¶</a></h3>
 <p>If the game includes printed manuals, license text can be included there.</p>
-</div>
-<div class="section" id="link-to-the-license">
+</section>
+<section id="link-to-the-license">
 <h3>Link to the license<a class="headerlink" href="#link-to-the-license" title="Permalink to this headline">¶</a></h3>
 <p>The Godot Engine developers consider that a link to godotengine.org/license
 in your game documentation or credits would be an acceptable way to satisfy
 the license terms.</p>
-</div>
-</div>
-<div class="section" id="third-party-licenses">
+</section>
+</section>
+<section id="third-party-licenses">
 <h2>Third-party licenses<a class="headerlink" href="#third-party-licenses" title="Permalink to this headline">¶</a></h2>
 <p>Godot itself contains software written by
 <a class="reference external" href="https://github.com/godotengine/godot/blob/master/COPYRIGHT.txt">third parties</a>.
@@ -437,7 +438,7 @@ Make sure to do it if these are compiled in your Godot export template. If
 you're using the official export templates, all libraries are enabled. This
 means you need to provide attribution for all the libraries listed below.</p>
 <p>Here's a list of libraries requiring attribution:</p>
-<div class="section" id="freetype">
+<section id="freetype">
 <h3>FreeType<a class="headerlink" href="#freetype" title="Permalink to this headline">¶</a></h3>
 <p>Godot uses <a class="reference external" href="https://www.freetype.org/">FreeType</a> to render fonts. Its license
 requires attribution, so the following text must be included together with the
@@ -445,8 +446,8 @@ Godot license:</p>
 <blockquote>
 <div><p>Portions of this software are copyright © &lt;year&gt; The FreeType Project (www.freetype.org).  All rights reserved.</p>
 </div></blockquote>
-</div>
-<div class="section" id="enet">
+</section>
+<section id="enet">
 <h3>ENet<a class="headerlink" href="#enet" title="Permalink to this headline">¶</a></h3>
 <p>Godot includes the <a class="reference external" href="http://enet.bespin.org/">ENet</a> library to handle
 high-level multiplayer. ENet has similar licensing terms as Godot:</p>
@@ -456,8 +457,8 @@ high-level multiplayer. ENet has similar licensing terms as Godot:</p>
 <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
 <p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
 </div></blockquote>
-</div>
-<div class="section" id="mbedtls">
+</section>
+<section id="mbedtls">
 <h3>MBedTLS<a class="headerlink" href="#mbedtls" title="Permalink to this headline">¶</a></h3>
 <p>If the project is done with Godot 3.1 or above and it utilizes SSL (usually
 through HTTP requests), the <a class="reference external" href="https://tls.mbed.org">MBedTLS</a> Apache license
@@ -476,9 +477,9 @@ limitations under the License.</p>
 </div></blockquote>
 <p>Keep in mind that Godot 2.x and 3.0 use <a class="reference external" href="https://www.openssl.org">OpenSSL</a>
 instead.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
