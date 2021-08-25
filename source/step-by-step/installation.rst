@@ -3,8 +3,6 @@
 Installation
 ============
 
-.. FracturalVNE: 
-
 .. attention:: Please ensure that you have Godot installed before continuing. 
 	You can download Godot `here <https://godotengine.org/download/>`_.
 
@@ -21,8 +19,3 @@ Then create a new Godot project or open an existing one. Afterwards, create a ``
 Unzip the downloaded zip file as a folder into ``res://addons``. This should leave you with a ``res://addons/FracturalVNE`` folder containing the plugin.
 
 If you downloaded the Mono version of the plugin, make sure to rebuild the solution, which can be done by pressing the build button on the top left of the editor.
-
-Plugin Structure
-~~~~~~~~~~~~~~~~
-
-The ``_modules`` folder contains optional folders, or ``modules``, that can be deleted if they are not needed. Feel free to customize the plugin to your needs by including only the modules you want.

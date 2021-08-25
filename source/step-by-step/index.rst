@@ -6,4 +6,5 @@ Step by step
 	:name: toc-learn-step-by-step
 
 	installation
-	introduction
+	editor_introduction
+	plugin_structure
