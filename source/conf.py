@@ -151,5 +151,21 @@ elif not on_rtd:
 
 notfound_context = {
     "title": "Page not found",
-    "body": "<p>ON GH PAGES? " + str(on_gh_pages) + "</p>\n" + "<p> ENVIRON" + ', '.join(os.environ) + "</p>",
+    "body": """
+        <h1>Page not found</h1>
+        <p>
+            Sorry, we couldn't find that page. It may have been renamed or removed
+            in the version of the documentation you're currently browsing.
+        </p>
+        <p>
+            If you're currently browsing the
+            <em>latest</em> version of the documentation, try browsing the
+            <a href="/en/stable/"><em>stable</em> version of the documentation</a>.
+        </p>
+        <p>
+            Alternatively, use the
+            <a href="#" onclick="$('#rtd-search-form [name=\\'q\\']').focus()">Search docs</a>
+            box on the left or <a href="/">go to the homepage</a>.
+        </p>
+    """,
 }
