@@ -1,20 +1,28 @@
+.. _doc_installation:
+
 Installation
 ============
 
-1. Go to the [releases page](https://github.com/Fractural/FracturalVisualNovelEngine/releases) of the github repository for Fractural VNE.
+.. FracturalVNE: 
 
-2. Find the latest release (Should be the top most release).
+.. attention:: Please ensure that you have Godot installed before continuing. 
+	You can download Godot `here <https://godotengine.org/download/>`_.
 
-3. Download one of the two .zip files:
-   - If you want C# support, then download "MonoFracturalVNE.zip"
-   - If you just need GDScript support, then download "FracturalVNE.zip"
+Go to the `releases page <https://github.com/Fractural/FracturalVisualNovelEngine/releases>`_ of the github repository for Fractural VNE.
 
-.. note:: tThe _modules folder actually contains optional folders that can be deleted at will to customize the plugin to your needs. 
+Find the latest release (Should be the top most release) and download one of the two .zip files:
+   
+   * If you want C# support, then download ``MonoFracturalVNE.zip``
+   
+   * If you just need GDScript support, then download ``FracturalVNE.zip``
 
-4. Create a new Godot project or open an existing one.
+Then create a new Godot project or open an existing one. Afterwards, create a ``res://addons`` folder in your project if it does not already exist.
 
-5. Create a "res://addons" folder if it does not already exist.
+Unzip the downloaded zip file as a folder into ``res://addons``. This should leave you with a ``res://addons/FracturalVNE`` folder containing the plugin.
 
-6. Unzip the downloaded zip file as a folder into "res://addons". This should leave you with a "res://addons/FracturalVNE" folder containing the plugin.
+If you downloaded the Mono version of the plugin, make sure to rebuild the solution, which can be done by pressing the build button on the top left of the editor.
 
-7. If you downloaded the Mono version of the plugin, make sure to rebuild the solution, which can be done by pressing the build button on the top left of the editor.
+Plugin Structure
+~~~~~~~~~~~~~~~~
+
+The ``_modules`` folder contains optional folders, or ``modules``, that can be deleted if they are not needed. Feel free to customize the plugin to your needs by including only the modules you want.

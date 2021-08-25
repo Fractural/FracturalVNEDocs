@@ -5,4 +5,5 @@ Step by step
 	:maxdepth: 1
 	:name: toc-learn-step-by-step
 
+	installation
 	introduction
