@@ -1,0 +1,345 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta property="og:title" content="Introduction to Fractural VNE's Editor" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="step-by-step/editor_introduction.html" />
+  <meta property="og:description" content="Lets get started by first explaining the plugin's UI. This plugin runs on a single window and by default, it will appear as a main screen window. You can access it by clicking on the Story Script b..." />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction to Fractural VNE&#39;s Editor &mdash; Fractural Visual Novel Engine latest documentation</title>
+
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    <meta name="theme-color" content="#3d8fcc">
+  
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Your first story script" href="your_first_story_script.html" />
+    <link rel="prev" title="Introduction to Story Script" href="story_script_introduction.html" />
+<meta name="doc_version" content="latest">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo_transparent.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Step by step</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="story_script_introduction.html">Introduction to Story Script</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Introduction to Fractural VNE's Editor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#script-editor">Script Editor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#top-bar-1">Top Bar (1)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#editing-file-label-2">Editing File Label (2)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#minimap-3">Minimap (3)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#text-editor-4">Text Editor (4)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#error-bar-5">Error Bar (5)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#position-label-6">Position Label (6)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#script-browser">Script Browser</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#top-bar-6">Top Bar (6)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#current-directory-label-2">Current Directory Label (2)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#file-display-3">File Display (3)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="your_first_story_script.html">Your first story script</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Fractural Visual Novel Engine</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Step by step</a> &raquo;</li>
+        
+      <li>Introduction to Fractural VNE's Editor</li>
+    
+    
+
+
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/step-by-step/editor_introduction.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="introduction-to-fractural-vne-s-editor">
+<span id="doc-editor-introduction"></span><h1>Introduction to Fractural VNE's Editor<a class="headerlink" href="#introduction-to-fractural-vne-s-editor" title="Permalink to this headline">¶</a></h1>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Please make sure you have the plugin installed in your Godot project
+before continuing. The installation instructions are <a class="reference internal" href="installation.html#doc-installation"><span class="std std-ref">here</span></a>.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If this is your first time using Godot, you should checkout the <a class="reference external" href="https://docs.godotengine.org/en/stable/getting_started/step_by_step/index.html">Godot introduction tutorials</a> to familiarize yourself with the Godot engine before learning how to use this plugin.</p>
+</div>
+<p>Lets get started by first explaining the plugin's UI. This plugin runs on a single window and by default, it will appear as a main screen window. You can access it by clicking on the <strong>Story Script</strong> button on the top of the editor.</p>
+<figure class="align-center" id="id1">
+<img alt="../_images/story_script_button.png" src="../_images/story_script_button.png" />
+<figcaption>
+<p><span class="caption-text">The <strong>Story Script</strong> button is found on the top of the Godot editor.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Once clicked, the story script window should open up, which looks something like this.</p>
+<img alt="../_images/story_script_editor_window.png" class="align-center" src="../_images/story_script_editor_window.png" />
+<p>The story script window is where you edit and compile story script files.</p>
+<p>The this window is separated into two sections: the script editor and the script browser, which is located to the left of the editor.</p>
+<img alt="../_images/story_script_editor_breakdown.png" class="align-center" src="../_images/story_script_editor_breakdown.png" />
+<section id="script-editor">
+<h2>Script Editor<a class="headerlink" href="#script-editor" title="Permalink to this headline">¶</a></h2>
+<p>The script editor is where you edit story script files. This editor can be broken up into 6 parts.</p>
+<img alt="../_images/script_editor_breakdown.png" class="align-center" src="../_images/script_editor_breakdown.png" />
+<section id="top-bar-1">
+<h3>Top Bar (1)<a class="headerlink" href="#top-bar-1" title="Permalink to this headline">¶</a></h3>
+<p>The top bar is the uppermost bar of the editor, which contains various useful buttons and indicators.</p>
+<p>From left to right, we have:</p>
+<ol class="arabic simple">
+<li><p>The compile button, which compiles the current script being edited.</p></li>
+<li><p>The run button, which compiles and then runs the current script in a window separate from the editor.</p></li>
+<li><p>The file button, which has a dropdown menu that lets you open a story script file, save the current story script to a file, or create a new story script.</p></li>
+<li><p>The settings button, which opens a window to FracturalVNE's settings.</p></li>
+<li><p>The compiled indicator, which lights up if the current script has been compiled.</p></li>
+<li><p>The saved indicator, which lights up if the current script has been saved to a file.</p></li>
+</ol>
+</section>
+<section id="editing-file-label-2">
+<h3>Editing File Label (2)<a class="headerlink" href="#editing-file-label-2" title="Permalink to this headline">¶</a></h3>
+<p>The editing file label displays the filepath to which file is currently being edited. If a new file is made, no filepath is shown.</p>
+</section>
+<section id="minimap-3">
+<h3>Minimap (3)<a class="headerlink" href="#minimap-3" title="Permalink to this headline">¶</a></h3>
+<p>This is a small preview of the entire story script. You can click on a location in the minimap to jump to that location in the text editor.</p>
+</section>
+<section id="text-editor-4">
+<h3>Text Editor (4)<a class="headerlink" href="#text-editor-4" title="Permalink to this headline">¶</a></h3>
+<p>The text editor takes up most of the script window and is where you edit a story script file. Line numbers are also shown on the left of the text editor.</p>
+</section>
+<section id="error-bar-5">
+<h3>Error Bar (5)<a class="headerlink" href="#error-bar-5" title="Permalink to this headline">¶</a></h3>
+<p>The error bar is located on the bottom of the script window and displays any errors that happen when compiling the script.</p>
+</section>
+<section id="position-label-6">
+<h3>Position Label (6)<a class="headerlink" href="#position-label-6" title="Permalink to this headline">¶</a></h3>
+<p>The position label indicates the current position of your cursor in the text editor. The first number shown is your cursor's line number. The second number shown is your cursor's column number.</p>
+</section>
+</section>
+<section id="script-browser">
+<h2>Script Browser<a class="headerlink" href="#script-browser" title="Permalink to this headline">¶</a></h2>
+<p>The script browser lets you quickly browse and select different scripts for editing. It can be broken into 3 parts.</p>
+<a class="reference internal image-reference" href="../_images/script_browser_breakdown.png"><img alt="../_images/script_browser_breakdown.png" class="align-center" src="../_images/script_browser_breakdown.png" style="width: 312.5px; height: 743.0px;" /></a>
+<section id="top-bar-6">
+<h3>Top Bar (6)<a class="headerlink" href="#top-bar-6" title="Permalink to this headline">¶</a></h3>
+<p>The top bar contains various buttons used for navigating the directory.</p>
+<p>From left to right, top to bottom:</p>
+<ol class="arabic simple">
+<li><p>The refresh button refreshes file display in the script browser.</p></li>
+<li><p>The open directory button sets the file display to show a directory.</p></li>
+<li><p>The compile all button compiles all the scripts in the current directory.</p></li>
+<li><p>The run main button compiles the script named <code class="docutils literal notranslate"><span class="pre">main.storyscript</span></code> and then runs <code class="docutils literal notranslate"><span class="pre">main.story</span></code>.</p></li>
+</ol>
+</section>
+<section id="current-directory-label-2">
+<h3>Current Directory Label (2)<a class="headerlink" href="#current-directory-label-2" title="Permalink to this headline">¶</a></h3>
+<p>The current directory label shows the current directory that the file display is showing.</p>
+</section>
+<section id="file-display-3">
+<h3>File Display (3)<a class="headerlink" href="#file-display-3" title="Permalink to this headline">¶</a></h3>
+<p>The file display shows all the <code class="docutils literal notranslate"><span class="pre">.storyscript</span></code> files in a directory. The file display comes with a search bar on the top that can be used to find a file. The two buttons on the top left of the file displays lets you switch between a list view and a tree view for the current directory's files.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="your_first_story_script.html" class="btn btn-neutral float-right" title="Your first story script" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="story_script_introduction.html" class="btn btn-neutral float-left" title="Introduction to Story Script" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Fractural, Atlinx and contributors.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

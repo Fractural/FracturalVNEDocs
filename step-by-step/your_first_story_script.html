@@ -1,0 +1,431 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta property="og:title" content="Your first story script" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="step-by-step/your_first_story_script.html" />
+  <meta property="og:description" content="Lets get started writing a basic story script that's a conversation between two people. StoryScript func oof(): pass # ----- BGScenes ----- # var bg_library1 = Scene(texture_path="res://addons/Frac..." />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your first story script &mdash; Fractural Visual Novel Engine latest documentation</title>
+
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/tabs.js"></script>
+        <script src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    <meta name="theme-color" content="#3d8fcc">
+  
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Introduction to Fractural VNE&#39;s Editor" href="editor_introduction.html" />
+<meta name="doc_version" content="latest">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo_transparent.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Step by step</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="story_script_introduction.html">Introduction to Story Script</a></li>
+<li class="toctree-l2"><a class="reference internal" href="editor_introduction.html">Introduction to Fractural VNE's Editor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="editor_introduction.html#script-editor">Script Editor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="editor_introduction.html#top-bar-1">Top Bar (1)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="editor_introduction.html#editing-file-label-2">Editing File Label (2)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="editor_introduction.html#minimap-3">Minimap (3)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="editor_introduction.html#text-editor-4">Text Editor (4)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="editor_introduction.html#error-bar-5">Error Bar (5)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="editor_introduction.html#position-label-6">Position Label (6)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="editor_introduction.html#script-browser">Script Browser</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="editor_introduction.html#top-bar-6">Top Bar (6)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="editor_introduction.html#current-directory-label-2">Current Directory Label (2)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="editor_introduction.html#file-display-3">File Display (3)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Your first story script</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Fractural Visual Novel Engine</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Step by step</a> &raquo;</li>
+        
+      <li>Your first story script</li>
+    
+    
+
+
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/step-by-step/your_first_story_script.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="your-first-story-script">
+<span id="doc-your-first-story-script"></span><h1>Your first story script<a class="headerlink" href="#your-first-story-script" title="Permalink to this headline">¶</a></h1>
+<p>Lets get started writing a basic story script that's a conversation between two people.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-U3RvcnlTY3JpcHQ=" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-U3RvcnlTY3JpcHQ=" name="U3RvcnlTY3JpcHQ=" role="tab" tabindex="0">StoryScript</button></div><div aria-labelledby="tab-0-U3RvcnlTY3JpcHQ=" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-U3RvcnlTY3JpcHQ=" name="U3RvcnlTY3JpcHQ=" role="tabpanel" tabindex="0"><div class="highlight-storyscript notranslate"><div class="highlight"><pre><span></span><span class="k">func</span> <span class="nf">oof</span><span class="p">():</span>
+    <span class="k">pass</span>
+
+<span class="c1"># ----- BGScenes ----- #</span>
+<span class="kd">var</span> <span class="n">bg_library1</span> <span class="o">=</span> <span class="nf">Scene</span>(<span class="n">texture_path</span><span class="o">=</span><span class="s2">&quot;res://addons/FracturalVNE/_modules/default_assets/bg_images/library_1.png&quot;</span><span class="p">)</span>
+<span class="kd">var</span> <span class="n">bg_library2</span> <span class="o">=</span> <span class="nf">Scene</span>(<span class="s2">&quot;res://addons/FracturalVNE/_modules/default_assets/bg_images/library_2.png&quot;</span><span class="p">)</span>
+<span class="kd">var</span> <span class="n">bg_library3</span> <span class="o">=</span> <span class="nf">Scene</span>(<span class="n">texture_path</span><span class="o">=</span><span class="s2">&quot;res://addons/FracturalVNE/_modules/default_assets/bg_images/library_3.png&quot;</span><span class="p">)</span>
+
+<span class="k">import</span> <span class="s2">&quot;res://demo/testing/testing_definitions.story&quot;</span>
+
+<span class="k">label</span> <span class="n">looped</span><span class="p">:</span>
+    <span class="s2">&quot;Testing show and remove...&quot;</span>
+    <span class="k">show</span> <span class="n">godette</span> <span class="n">happy</span> <span class="k">with</span> <span class="n">fade_to_black</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">remove</span> <span class="n">godette</span>
+    <span class="s2">&quot;Tested show and remove&quot;</span>
+
+    <span class="s2">&quot;Testing move and remove...&quot;</span>
+    <span class="k">show</span> <span class="n">godette</span> <span class="n">happy</span>
+    <span class="k">move</span> <span class="n">godette</span> <span class="n">to</span> <span class="nf">Point</span>(<span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="k">move</span> <span class="n">godette</span> <span class="n">to</span> <span class="nf">Point</span>(<span class="mi">500</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="k">with</span> <span class="n">linear</span> <span class="n">for</span> <span class="mi">2</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">remove</span> <span class="n">godette</span>
+    <span class="s2">&quot;Tested move and remove&quot;</span>
+
+    <span class="s2">&quot;Testing animate and remove...&quot;</span>
+    <span class="k">show</span> <span class="n">godette</span> <span class="n">happy</span>
+    <span class="k">animate</span> <span class="n">godette</span> <span class="k">with</span> <span class="n">hop</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">remove</span> <span class="n">godette</span>
+    <span class="s2">&quot;Tested animate and remove&quot;</span>
+
+    <span class="s2">&quot;Testing scene show...&quot;</span>
+    <span class="k">scene</span> <span class="n">bg_library2</span> <span class="k">with</span> <span class="n">fade_to_black</span>
+    <span class="s2">&quot;Tested scene show&quot;</span>
+
+    <span class="s2">&quot;Testing scene replace show...&quot;</span>
+    <span class="k">scene</span> <span class="n">bg_library3</span> <span class="k">with</span> <span class="n">fade_to_black</span>
+    <span class="s2">&quot;Tested scene replace show&quot;</span>
+
+    <span class="s2">&quot;Testing full transition (with bgm and scene)...&quot;</span>
+    <span class="k">transition</span> <span class="n">fade_to_black</span><span class="p">:</span>
+        <span class="k">sound</span> <span class="n">music</span> <span class="n">bgm_poppy_shop</span>
+        <span class="k">scene</span> <span class="n">bg_library1</span>
+    <span class="s2">&quot;Tested full transition&quot;</span>
+
+    <span class="s2">&quot;Testing sound...&quot;</span>
+    <span class="k">sound</span> <span class="n">sfx</span> <span class="n">sfx_entrance_chime</span>
+    <span class="s2">&quot;Tested sound&quot;</span>
+
+    <span class="s2">&quot;Testing sound interrupting...&quot;</span>
+    <span class="k">sound</span> <span class="n">sfx</span> <span class="n">sfx_entrance_chime</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">sound</span> <span class="n">sfx</span> <span class="n">sfx_entrance_chime</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">sound</span> <span class="n">sfx</span> <span class="n">sfx_entrance_chime</span>
+    <span class="s2">&quot;Tested sound interrupting&quot;</span>
+
+    <span class="s2">&quot;Testing sound queueing...&quot;</span>
+    <span class="k">sound</span> <span class="n">queued_channel</span> <span class="n">sfx_entrance_chime</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">sound</span> <span class="n">queued_channel</span> <span class="n">sfx_entrance_chime</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">sound</span> <span class="n">queued_channel</span> <span class="n">sfx_entrance_chime</span>
+    <span class="s2">&quot;Tested sound queueing&quot;</span>
+
+    <span class="k">move</span> <span class="n">godette2</span> <span class="n">to</span> <span class="nf">Point</span>(<span class="o">-</span><span class="mi">400</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="k">move</span> <span class="n">godette3</span> <span class="n">to</span> <span class="nf">Point</span>(<span class="o">-</span><span class="mi">300</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="k">move</span> <span class="n">godette4</span> <span class="n">to</span> <span class="nf">Point</span>(<span class="o">-</span><span class="mi">200</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="k">move</span> <span class="n">godette5</span> <span class="n">to</span> <span class="nf">Point</span>(<span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="k">move</span> <span class="n">godette10</span> <span class="n">to</span> <span class="nf">Point</span>(<span class="mi">500</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="k">move</span> <span class="n">godette9</span> <span class="n">to</span> <span class="nf">Point</span>(<span class="mi">400</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="k">move</span> <span class="n">godette8</span> <span class="n">to</span> <span class="nf">Point</span>(<span class="mi">300</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="k">move</span> <span class="n">godette7</span> <span class="n">to</span> <span class="nf">Point</span>(<span class="mi">200</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="k">move</span> <span class="n">godette6</span> <span class="n">to</span> <span class="nf">Point</span>(<span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+    <span class="s2">&quot;Testing stacked show...&quot;</span>
+    <span class="k">show</span> <span class="n">godette</span> <span class="n">happy</span> <span class="k">with</span> <span class="n">fade_to_black</span>
+    <span class="k">show</span> <span class="n">godette</span> <span class="n">sad</span> <span class="k">with</span> <span class="n">fade_to_black</span>
+    <span class="k">show</span> <span class="n">godette</span> <span class="n">surprised</span> <span class="k">with</span> <span class="n">fade_to_black</span>
+    <span class="s2">&quot;Tested stacked show&quot;</span>
+
+    <span class="s2">&quot;Testing move...&quot;</span>
+    <span class="k">move</span> <span class="n">godette</span> <span class="n">to</span> <span class="nf">Point</span>(<span class="o">-</span><span class="mi">500</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="k">with</span> <span class="n">ease_in</span>
+    <span class="s2">&quot;Tested move&quot;</span>
+
+    <span class="s2">&quot;Testing show...&quot;</span>
+    <span class="k">show</span> <span class="n">godette2</span> <span class="n">surprised</span> <span class="k">with</span> <span class="n">fade_to_black</span>
+    <span class="k">show</span> <span class="n">godette3</span> <span class="n">surprised</span> <span class="k">with</span> <span class="n">fade_to_black</span>
+    <span class="k">show</span> <span class="n">godette4</span> <span class="n">surprised</span> <span class="k">with</span> <span class="n">fade_to_black</span>
+    <span class="k">show</span> <span class="n">godette5</span> <span class="n">surprised</span> <span class="k">with</span> <span class="n">fade_to_black</span>
+
+    <span class="k">show</span> <span class="n">godette6</span> <span class="n">surprised</span> <span class="k">with</span> <span class="n">cross_fade</span>
+    <span class="k">show</span> <span class="n">godette7</span> <span class="n">surprised</span> <span class="k">with</span> <span class="n">cross_fade</span>
+    <span class="k">show</span> <span class="n">godette8</span> <span class="n">surprised</span> <span class="k">with</span> <span class="n">cross_fade</span>
+    <span class="k">show</span> <span class="n">godette9</span> <span class="n">surprised</span> <span class="k">with</span> <span class="n">cross_fade</span>
+    <span class="k">show</span> <span class="n">godette10</span> <span class="n">surprised</span> <span class="k">with</span> <span class="n">cross_fade</span>
+    <span class="s2">&quot;Tested show&quot;</span>
+
+    <span class="s2">&quot;Testing character dialogue...&quot;</span>
+    <span class="n">godette</span> <span class="s2">&quot;Hi there!&quot;</span>
+    <span class="s2">&quot;Tested character dialogue&quot;</span>
+
+    <span class="s2">&quot;Testing narration...&quot;</span>
+    <span class="s2">&quot;This is some narration&quot;</span>
+    <span class="s2">&quot;Tested narration&quot;</span>
+
+    <span class="s2">&quot;Testing string character dialogue...&quot;</span>
+    <span class="s2">&quot;Bob&quot;</span> <span class="s2">&quot;I&#39;m dialogue using a string for the character name!&quot;</span>
+    <span class="s2">&quot;Tested string character dialogue&quot;</span>
+
+    <span class="s2">&quot;Testing animation&quot;</span>
+    <span class="k">animate</span> <span class="n">godette</span> <span class="k">with</span> <span class="n">hop</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">animate</span> <span class="n">godette2</span> <span class="k">with</span> <span class="n">hop</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">animate</span> <span class="n">godette3</span> <span class="k">with</span> <span class="n">hop</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">animate</span> <span class="n">godette4</span> <span class="k">with</span> <span class="n">hop</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">animate</span> <span class="n">godette5</span> <span class="k">with</span> <span class="n">hop</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">animate</span> <span class="n">godette6</span> <span class="k">with</span> <span class="n">hop</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">animate</span> <span class="n">godette7</span> <span class="k">with</span> <span class="n">hop</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">animate</span> <span class="n">godette8</span> <span class="k">with</span> <span class="n">hop</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">animate</span> <span class="n">godette9</span> <span class="k">with</span> <span class="n">hop</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">animate</span> <span class="n">godette10</span> <span class="k">with</span> <span class="n">hop</span>
+    <span class="k">pause</span> <span class="mi">1</span>
+    <span class="s2">&quot;Tested animation&quot;</span>
+
+    <span class="s2">&quot;Test hiding...&quot;</span>
+    <span class="k">hide</span> <span class="n">godette</span> <span class="k">with</span> <span class="n">cross_fade</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">hide</span> <span class="n">godette2</span> <span class="k">with</span> <span class="n">cross_fade</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">hide</span> <span class="n">godette3</span> <span class="k">with</span> <span class="n">cross_fade</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">hide</span> <span class="n">godette4</span> <span class="k">with</span> <span class="n">cross_fade</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">hide</span> <span class="n">godette5</span> <span class="k">with</span> <span class="n">cross_fade</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">hide</span> <span class="n">godette6</span> <span class="k">with</span> <span class="n">cross_fade</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">hide</span> <span class="n">godette7</span> <span class="k">with</span> <span class="n">cross_fade</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">hide</span> <span class="n">godette8</span> <span class="k">with</span> <span class="n">cross_fade</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">hide</span> <span class="n">godette9</span> <span class="k">with</span> <span class="n">cross_fade</span>
+    <span class="k">pause</span> <span class="mf">0.1</span>
+    <span class="k">hide</span> <span class="n">godette10</span> <span class="k">with</span> <span class="n">cross_fade</span>
+    <span class="k">pause</span> <span class="mi">2</span>
+    <span class="s2">&quot;Tested hiding&quot;</span>
+
+    <span class="s2">&quot;Test jumping (looping back)...&quot;</span>
+    <span class="k">jump</span> <span class="n">looped</span>
+</pre></div>
+</div>
+</div></div>
+<div class="highlight-storyscript notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">lol</span><span class="p">:</span>
+    <span class="n">define</span> <span class="n">some_var</span> <span class="o">=</span> <span class="mf">12034.3230400</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">bob</span> <span class="s2">&quot;oof&quot;</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="editor_introduction.html" class="btn btn-neutral float-left" title="Introduction to Fractural VNE&#39;s Editor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Fractural, Atlinx and contributors.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
