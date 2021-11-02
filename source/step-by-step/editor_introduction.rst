@@ -18,12 +18,14 @@ Lets get started by first explaining the plugin's UI. This plugin runs on a sing
 Once clicked, the story script window should open up, which looks something like this.
 
 .. image:: img/story_script_editor_window.png
+	:align: center
 
 The story script window is where you edit and compile story script files.
 
 The this window is separated into two sections: the script editor and the script browser, which is located to the left of the editor.
 
 .. image:: img/story_script_editor_breakdown.png
+	:align: center
 
 Script Editor
 -------------
@@ -31,6 +33,7 @@ Script Editor
 The script editor is where you edit story script files. This editor can be broken up into 6 parts.
 
 .. image:: img/script_editor_breakdown.png
+	:align: center
 
 Top Bar (1)
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -82,3 +85,26 @@ Script Browser
 The script browser lets you quickly browse and select different scripts for editing. It can be broken into 3 parts.
 
 .. image:: img/script_browser_breakdown.png
+	:scale: 50%
+	:align: center
+
+Top Bar (6)
+~~~~~~~~~~~~~~~~~~~~~~
+
+The top bar contains various buttons used for navigating the directory.
+
+From left to right, top to bottom:
+
+1. The refresh button refreshes file display in the script browser.
+2. The open directory button sets the file display to show a directory.
+3. The compile all button compiles all the scripts in the current directory. 
+4. The run main button compiles the script named ``main.storyscript`` and then runs ``main.story``.
+
+Current Directory Label (2)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The current directory label shows the current directory that the file display is showing.
+
+File Display (3)
+~~~~~~~~~~~~~~~~
+
+The file display shows all the ``.storyscript`` files in a directory. The file display comes with a search bar on the top that can be used to find a file. The two buttons on the top left of the file displays lets you switch between a list view and a tree view for the current directory's files.

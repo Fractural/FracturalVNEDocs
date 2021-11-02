@@ -37,7 +37,7 @@ master_doc = "index"
 # ones.
 extensions = [
     "myst_parser",
-    "gdscript",
+    "storyscript",
     "sphinx.ext.autodoc",
     "sphinx.ext.intersphinx",
     "sphinx.ext.viewcode",
@@ -84,18 +84,18 @@ release = version
 # fmt: off
 # These imports should *not* be moved to the start of the file,
 # they depend on the sys.path.append call registering "_extensions".
-# GDScript syntax highlighting
-from gdscript import GDScriptLexer
+# StoryScript syntax highlighting
+from storyscript import StoryScriptLexer
 from sphinx.highlighting import lexers
 
-lexers["gdscript"] = GDScriptLexer()
+lexers["storyscript"] = StoryScriptLexer()
 # fmt: on
 
 smartquotes = False
 
 # Pygments (syntax highlighting) style to use
 pygments_style = "sphinx"
-highlight_language = "gdscript"
+highlight_language = "storyscript"
 
 # -- Options for HTML output -------------------------------------------------
 
