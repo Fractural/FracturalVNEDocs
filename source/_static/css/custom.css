@@ -11,25 +11,25 @@
     --content-wrap-background-color: #efefef;
     --content-background-color: #fcfcfc;
     --logo-opacity: 1.0;
-    --navbar-background-color: #696969;
-    --navbar-background-color-hover: #585858;
-    --navbar-background-color-active: #525252;
-    --navbar-current-background-color: #4e4e4e;
-    --navbar-current-background-color-hover: #424242;
-    --navbar-current-background-color-active: #3b3b3b;
-    --navbar-level-1-color: #ffc3d0;
-    --navbar-level-2-color: #f0b8cb;
-    --navbar-level-3-color: #e1a3bb;
+    --navbar-background-color: #333f67;
+    --navbar-background-color-hover: #29355c;
+    --navbar-background-color-active: #212d51;
+    --navbar-current-background-color: #212d51;
+    --navbar-current-background-color-hover: #182343;
+    --navbar-current-background-color-active: #131e3b;
+    --navbar-level-1-color: #c3e3ff;
+    --navbar-level-2-color: #b8d6f0;
+    --navbar-level-3-color: #a3c4e1;
     --navbar-heading-color: #ff7381;
     --navbar-scrollbar-color: #d45a66;
     --navbar-scrollbar-hover-color: #b14550;
     --navbar-scrollbar-active-color: #72383e;
-    --navbar-scrollbar-background: #2e2e2e;
+    --navbar-scrollbar-background: #131e2b;
 
     --link-color: #2980b9;
     --link-color-hover: #3091d1;
     --link-color-active: #105078;
-    --link-color-visited: #d85c85;
+    --link-color-visited: #9b59b6;
     --external-reference-icon: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjEyIiB3aWR0aD0iMTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjk4MGI5Ij48cGF0aCBkPSJtNy41IDcuMXYzLjRoLTZ2LTZoMy40Ii8+PHBhdGggZD0ibTUuNzY1IDFoNS4yMzV2NS4zOWwtMS41NzMgMS41NDctMS4zMS0xLjMxLTIuNzI0IDIuNzIzLTIuNjktMi42ODggMi44MS0yLjgwOC0xLjMxMy0xLjMxeiIvPjwvZz48L3N2Zz4K");
     --classref-badge-text-color: hsl(0, 0%, 45%);
 
@@ -39,7 +39,7 @@
     --code-border-color: #e1e4e5;
     --code-literal-color: #d04c60;
     --input-background-color: #fcfcfc;
-    --input-focus-border-color: #d85c85;
+    --input-focus-border-color: #5f8cff;
 
     --search-input-background-color: #e6eef3; /* derived from --input-background-color */
     --search-match-color: #2c6b96; /* derived from --link-color */
@@ -97,16 +97,16 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --body-color: rgba(255, 255, 255, 0.85);
-        --content-wrap-background-color: #252525;
-        --content-background-color: #333333;
+        --content-wrap-background-color: #202326;
+        --content-background-color: #2e3236;
         /* Decrease the logo opacity when using the dark theme to be less distracting */
         --logo-opacity: 0.85;
-        --navbar-background-color: #2b2b2b;
-        --navbar-background-color-hover: #393433;
-        --navbar-background-color-active: #171717;
-        --navbar-current-background-color: #393336;
-        --navbar-current-background-color-hover: #494949;
-        --navbar-current-background-color-active: #292929;
+        --navbar-background-color: #25282b;
+        --navbar-background-color-hover: #333639;
+        --navbar-background-color-active: #111417;
+        --navbar-current-background-color: #333639;
+        --navbar-current-background-color-hover: #44474a;
+        --navbar-current-background-color-active: #222528;
         --navbar-level-1-color: #ddd;
         --navbar-level-2-color: #ccc;
         --navbar-level-3-color: #bbb;
@@ -114,12 +114,12 @@
         --navbar-scrollbar-color: #be5460;
         --navbar-scrollbar-hover-color: #963e48;
         --navbar-scrollbar-active-color: #5f3034;
-        --navbar-scrollbar-background: #1c1c1c;
+        --navbar-scrollbar-background: #1c1e21;
 
         --link-color: #8cf;
         --link-color-hover: #9df;
         --link-color-active: #6ad;
-        --link-color-visited: #d85c85;
+        --link-color-visited: #cb99f6;
         --external-reference-icon: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjEyIiB3aWR0aD0iMTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOGNmIj48cGF0aCBkPSJtNy41IDcuMXYzLjRoLTZ2LTZoMy40Ii8+PHBhdGggZD0ibTUuNzY1IDFoNS4yMzV2NS4zOWwtMS41NzMgMS41NDctMS4zMS0xLjMxLTIuNzI0IDIuNzIzLTIuNjktMi42ODggMi44MS0yLjgwOC0xLjMxMy0xLjMxeiIvPjwvZz48L3N2Zz4K");
         --classref-badge-text-color: hsl(0, 0%, 70%);
 
@@ -129,7 +129,7 @@
         --code-border-color: #505356;
         --code-literal-color: #faa;
         --input-background-color: #333537;
-        --input-focus-border-color: #d85c85;
+        --input-focus-border-color: #5f8cff;
 
         --search-input-background-color: #43464a; /* derived from --input-background-color */
         --search-match-color: #52b4ff; /* derived from --link-color */
@@ -171,9 +171,9 @@
         --admonition-tip-title-background-color: #336648;
         --admonition-tip-title-color: #dfd;
 
-        --kbd-background-color: #5d595a;
-        --kbd-outline-color: #443d3f;
-        --kbd-shadow-color: #231e20;
+        --kbd-background-color: #595b5d;
+        --kbd-outline-color: #3d4144;
+        --kbd-shadow-color: #1e2023;
         --kbd-text-color: #e2f2ff;
 
         --code-example-good-color: #3fb950;
@@ -549,6 +549,17 @@ footer,
 .wy-table-responsive table th:not(:nth-child(1)) {
     white-space: normal;
 }
+/* Allow to control wrapping behavior per table */
+.wy-table-responsive table.wrap-normal td,
+.wy-table-responsive table.wrap-normal th {
+    white-space: normal;
+}
+
+/* Make sure line blocks don't stretch tables */
+.wy-table-responsive table .line-block {
+    margin-bottom: 0;
+}
+
 
 /* Make sure not to wrap keyboard shortcuts */
 .wy-table-responsive table td kbd {
